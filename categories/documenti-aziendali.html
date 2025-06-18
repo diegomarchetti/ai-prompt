@@ -1,0 +1,43 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Genera un Report Aziendale -->
+  <div class="prompt-card">
+    <div class="prompt-title">📄 Genera un Report Aziendale</div>
+    <div class="prompt-description">
+      Crea un report professionale a partire da dati e contesto forniti
+    </div>
+    <div class="prompt-preview">
+      Redigi un report aziendale basato sulle informazioni fornite, seguendo una struttura formale...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Genera un Report Aziendale",
+      "template": "Redigi un report aziendale professionale sulla base dei seguenti dati e contesto forniti:\n\n📊 CONTESTO: [CONTESTO]\n📈 DATI CHIAVE: [DATI_CHIAVE]\n🎯 OBIETTIVI DEL REPORT: [OBIETTIVI]\n\nSTRUTTURA SUGGERITA:\n1. Introduzione e obiettivi\n2. Contesto e background\n3. Analisi dei dati\n4. Risultati principali\n5. Conclusioni e raccomandazioni\n\nTono: [TONO_DESIDERATO]\n\nIl report deve essere chiaro, professionale e coerente con lo stile aziendale.",
+      "variables": [
+        { "name": "CONTESTO", "label": "Contesto aziendale", "type": "textarea" },
+        { "name": "DATI_CHIAVE", "label": "Dati chiave da includere", "type": "textarea" },
+        { "name": "OBIETTIVI", "label": "Obiettivi del report", "type": "textarea" },
+        { "name": "TONO_DESIDERATO", "label": "Tono del documento", "type": "select", "options": ["Formale", "Professionale", "Analitico", "Istituzionale"] }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Redigi una Procedura Operativa -->
+  <div class="prompt-card">
+    <div class="prompt-title">🧾 Procedura o Documento Interno</div>
+    <div class="prompt-description">
+      Crea una procedura interna o documento operativo per uso aziendale
+    </div>
+    <div class="prompt-preview">
+      Scrivi una procedura operativa chiara e concisa per [TIPO_DOCUMENTO]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Redigi una Procedura Operativa",
+      "template": "Scrivi una procedura operativa aziendale chiara, utile per i collaboratori.\n\n📌 SCOPO DEL DOCUMENTO: [TIPO_DOCUMENTO]\n👥 DESTINATARI: [DESTINATARI]\n📍 CONTESTO: [CONTESTO]\n🔢 PASSAGGI OPERATIVI: [PASSAGGI]\n\nFormato richiesto:\n• Titolo\n• Scopo\n• Responsabilità\n• Dettaglio delle fasi operative\n• Note finali (se necessarie)\n\nUsa uno stile coerente, professionale e orientato alla chiarezza.",
+      "variables": [
+        { "name": "TIPO_DOCUMENTO", "label": "Tipo di documento/procedura", "type": "text" },
+        { "name": "DESTINATARI", "label": "Destinatari del documento", "type": "text" },
+        { "name": "CONTESTO", "label": "Contesto e obiettivo", "type": "textarea" },
+        { "name": "PASSAGGI", "label": "Elenco dei passaggi", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

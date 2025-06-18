@@ -1,0 +1,45 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Script Video per Contenuti -->
+  <div class="prompt-card">
+    <div class="prompt-title">🎬 Script Video Completo</div>
+    <div class="prompt-description">
+      Genera uno script completo per un video tutorial, promozionale o social
+    </div>
+    <div class="prompt-preview">
+      Scrivi uno script per un video su [ARGOMENTO] rivolto a [PUBBLICO], tono [TONO]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Script Video Completo",
+      "template": "Scrivi lo script per un video che parli di:\n\n🎯 ARGOMENTO: [ARGOMENTO]\n👥 PUBBLICO DI RIFERIMENTO: [PUBBLICO]\n💬 TONO DESIDERATO: [TONO]\n🎞️ FORMATO VIDEO: [TIPO_VIDEO]\n📍 STRUTTURA O DURATA DESIDERATA: [DURATA]\n\nFornisci:\n- Introduzione\n- Svolgimento (diviso in scene o sezioni)\n- Testi per voice-over o sottotitoli\n- Suggerimenti per musica o montaggio se utile",
+      "variables": [
+        { "name": "ARGOMENTO", "label": "Tema principale del video", "type": "text" },
+        { "name": "PUBBLICO", "label": "Target di riferimento", "type": "text" },
+        { "name": "TONO", "label": "Tono dello script", "type": "select", "options": ["Professionale", "Ironico", "Ispirazionale", "Informale", "Motivazionale"] },
+        { "name": "TIPO_VIDEO", "label": "Tipo di video", "type": "select", "options": ["Tutorial", "Social", "Pubblicitario", "Esplicativo", "Animazione"] },
+        { "name": "DURATA", "label": "Durata o struttura", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Prompt per Video AI -->
+  <div class="prompt-card">
+    <div class="prompt-title">📽️ Prompt per Video Generato da AI</div>
+    <div class="prompt-description">
+      Scrivi un prompt dettagliato per creare un video AI con ambientazione, azione e stile
+    </div>
+    <div class="prompt-preview">
+      Crea un video AI con [SCENA], stile [STILE], atmosfera [ATMOSFERA]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Prompt per Video Generato da AI",
+      "template": "Scrivi un prompt per generare un video AI tramite strumenti come Pika, Runway, Kaiber.\n\n🎞️ SCENA O SOGGETTO: [SCENA]\n🎨 STILE VISIVO: [STILE]\n🌫️ ATMOSFERA / EMOZIONE: [ATMOSFERA]\n🎬 MOVIMENTO O AZIONE PRINCIPALE: [MOVIMENTO]\n🖼️ FORMATO VIDEO: [FORMATO]\n\nIl prompt deve essere:\n- Molto descrittivo e dettagliato\n- Ottimizzato per strumenti AI visivi\n- In grado di ispirare un output cinematico o creativo",
+      "variables": [
+        { "name": "SCENA", "label": "Soggetto o scena da rappresentare", "type": "textarea" },
+        { "name": "STILE", "label": "Stile visivo (es. anime, realistico, Pixar...)", "type": "text" },
+        { "name": "ATMOSFERA", "label": "Mood, emozione, colori", "type": "text" },
+        { "name": "MOVIMENTO", "label": "Tipo di azione o animazione", "type": "text" },
+        { "name": "FORMATO", "label": "Formato (es. 16:9, square, vertical)", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

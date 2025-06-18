@@ -1,0 +1,46 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Risposta Email Intelligente -->
+  <div class="prompt-card">
+    <div class="prompt-title">📧 Risposta Email Intelligente</div>
+    <div class="prompt-description">
+      Analizza e rispondi a email ricevute con tono appropriato
+    </div>
+    <div class="prompt-preview">
+      Agisci come un assistente di comunicazione professionale. Analizza questa email ricevuta...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Risposta Email Intelligente",
+      "template": "Agisci come un assistente di comunicazione professionale. Analizza questa email ricevuta e genera una risposta appropriata:\n\n📧 EMAIL RICEVUTA:\nMittente: [NOME_MITTENTE]\n---\n[TESTO_EMAIL_COMPLETA]\n---\n\n🎯 TIPO DI RISPOSTA: [TIPO_RISPOSTA]\n🎭 TONO DESIDERATO: [TONO_RISPOSTA]\n\nPROCESSO:\n1. 📊 ANALISI: Analizza tono, stile e punti chiave del mittente\n2. 🎯 STRATEGIA: Determina approccio più appropriato\n3. ✍️ REDAZIONE: Scrivi risposta coerente e professionale\n\nCONSIDERA:\n• Livello di formalità dell\\u0027email originale\n• Urgenza e importanza del contenuto\n• Relazione professionale con il mittente\n• Call-to-action necessarie\n\nFORMATO RISPOSTA:\n- Oggetto email appropriato\n- Saluto personalizzato\n- Corpo del messaggio strutturato\n- Chiusura professionale\n- Firma se necessaria",
+      "variables": [
+        { "name": "NOME_MITTENTE", "label": "Nome del mittente", "type": "text" },
+        { "name": "TESTO_EMAIL_COMPLETA", "label": "Testo email ricevuta", "type": "textarea" },
+        { "name": "TIPO_RISPOSTA", "label": "Tipo di risposta", "type": "select", "options": ["Conferma/Accettazione", "Richiesta informazioni", "Proposta alternativa", "Declino cortese", "Follow-up", "Risposta generica"] },
+        { "name": "TONO_RISPOSTA", "label": "Tono desiderato", "type": "select", "options": ["Automatico (stesso del mittente)", "Formale", "Professionale", "Amichevole", "Diretto", "Diplomatico"] }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Email di Richiesta Professionale -->
+  <div class="prompt-card">
+    <div class="prompt-title">📨 Email di Richiesta Professionale</div>
+    <div class="prompt-description">
+      Per richiedere informazioni, meeting o collaborazioni
+    </div>
+    <div class="prompt-preview">
+      Scrivi un'email professionale per [TIPO_RICHIESTA] a [NOME_DESTINATARIO]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Email di Richiesta Professionale",
+      "template": "Scrivi un\\u0027email professionale per [TIPO_RICHIESTA]:\n\n👤 DESTINATARIO: [NOME_DESTINATARIO] - [RUOLO_AZIENDA]\n🎯 OBIETTIVO: [OBIETTIVO_SPECIFICO]\n⏰ URGENZA: [LIVELLO_URGENZA]\n\nSTRUTTURA:\n📌 OGGETTO: Chiaro e specifico\n👋 APERTURA: Saluto professionale + presentazione se necessario\n🎯 CORPO: \n  • Contesto e motivo della richiesta\n  • Dettagli specifici\n  • Benefici reciproci (se applicabile)\n  • Call-to-action chiara\n🔚 CHIUSURA: Ringraziamenti + disponibilità\n\nTONO: [STILE_COMUNICAZIONE]\nCONTESTO AGGIUNTIVO: [INFORMAZIONI_EXTRA]\n\nIncludi nella risposta anche 2-3 alternative per l\\u0027oggetto dell\\u0027email.",
+      "variables": [
+        { "name": "TIPO_RICHIESTA", "label": "Tipo di richiesta", "type": "select", "options": ["Meeting/Appuntamento", "Informazioni", "Collaborazione", "Preventivo", "Partnership", "Supporto tecnico", "Altro"] },
+        { "name": "NOME_DESTINATARIO", "label": "Nome destinatario", "type": "text" },
+        { "name": "RUOLO_AZIENDA", "label": "Ruolo e azienda", "type": "text" },
+        { "name": "OBIETTIVO_SPECIFICO", "label": "Obiettivo specifico", "type": "textarea" },
+        { "name": "LIVELLO_URGENZA", "label": "Livello urgenza", "type": "select", "options": ["Bassa", "Media", "Alta", "Urgente"] },
+        { "name": "STILE_COMUNICAZIONE", "label": "Stile comunicazione", "type": "select", "options": ["Formale", "Professionale", "Diretto", "Persuasivo"] },
+        { "name": "INFORMAZIONI_EXTRA", "label": "Informazioni aggiuntive", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

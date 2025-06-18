@@ -1,0 +1,42 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Gestione Anziano Fragile -->
+  <div class="prompt-card">
+    <div class="prompt-title">👵 Gestione Anziano Fragile</div>
+    <div class="prompt-description">
+      Elabora una valutazione geriatrica e piano assistenziale per un paziente fragile
+    </div>
+    <div class="prompt-preview">
+      Un paziente anziano con [CONDIZIONI], vive [SITUAZIONE]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Valutazione geriatrica e gestione dell&#39;anziano fragile",
+      "template": "Agisci come un geriatra esperto in pazienti fragili. Valuta e gestisci questo caso:\n\n👤 ETÀ DEL PAZIENTE: [ETA]\n🧾 CONDIZIONI CLINICHE: [CONDIZIONI]\n🏡 CONTESTO ABITATIVO: [SITUAZIONE]\n⚙️ GRADO DI AUTONOMIA: [AUTONOMIA]\n\nFornisci:\n- Una valutazione geriatrica multidimensionale (clinica, cognitiva, funzionale, sociale)\n- Obiettivi assistenziali\n- Piano terapeutico e follow-up\n\nTono professionale per uso clinico interno.",
+      "variables": [
+        { "name": "ETA", "label": "Età del paziente", "type": "text" },
+        { "name": "CONDIZIONI", "label": "Condizioni cliniche rilevanti", "type": "textarea" },
+        { "name": "SITUAZIONE", "label": "Situazione abitativa (es. casa, RSA)", "type": "text" },
+        { "name": "AUTONOMIA", "label": "Grado di autonomia (ADL, IADL...)", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Politerapia e Deprescribing -->
+  <div class="prompt-card">
+    <div class="prompt-title">💊 Revisione Farmaci</div>
+    <div class="prompt-description">
+      Analizza una politerapia in paziente anziano e suggerisci eventuali riduzioni
+    </div>
+    <div class="prompt-preview">
+      Valuta se la terapia [FARMACI] è adeguata per un paziente di [ETA] con [COMORB]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Analisi politerapia e deprescribing in geriatria",
+      "template": "Sei un medico geriatra. Valuta la seguente politerapia per un paziente anziano:\n\n👴 ETÀ: [ETA]\n💊 TERAPIA ATTUALE: [FARMACI]\n📋 COMORBIDITÀ E RISCHI: [COMORB]\n\nFornisci:\n- Valutazione di appropriatezza (secondo criteri Beers o simili)\n- Farmaci potenzialmente inappropriati\n- Suggerimenti di deprescribing\n\nOrganizza in tabella se utile.",
+      "variables": [
+        { "name": "ETA", "label": "Età del paziente", "type": "text" },
+        { "name": "FARMACI", "label": "Elenco farmaci in uso", "type": "textarea" },
+        { "name": "COMORB", "label": "Comorbidità / condizioni di rischio", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Diagnosi differenziale da sintomi -->
+  <div class="prompt-card">
+    <div class="prompt-title">🧪 Diagnosi da Sintomi</div>
+    <div class="prompt-description">
+      Ottieni una lista ordinata di diagnosi differenziali a partire dai sintomi riportati
+    </div>
+    <div class="prompt-preview">
+      Un paziente presenta [SINTOMI], età [ETA], sesso [SESSO], storia clinica [STORIA]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Diagnosi differenziale da sintomi",
+      "template": "Sei un medico esperto in medicina interna. In base ai dati clinici riportati, elenca le possibili diagnosi differenziali in ordine di probabilità.\n\n📍 SINTOMI: [SINTOMI]\n👤 ETÀ: [ETA]\n⚧️ SESSO: [SESSO]\n🩺 STORIA CLINICA RILEVANTE: [STORIA]\n\nPer ogni possibile diagnosi:\n- descrivi sinteticamente il razionale\n- suggerisci eventuali esami diagnostici di approfondimento\n- se utile, specifica fattori di rischio noti",
+      "variables": [
+        { "name": "SINTOMI", "label": "Sintomi principali", "type": "textarea" },
+        { "name": "ETA", "label": "Età del paziente", "type": "text" },
+        { "name": "SESSO", "label": "Sesso (M/F/Altro)", "type": "text" },
+        { "name": "STORIA", "label": "Eventuali patologie pregresse", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Analisi multi-sintomo -->
+  <div class="prompt-card">
+    <div class="prompt-title">🔍 Cosa potrebbe causare questi sintomi?</div>
+    <div class="prompt-description">
+      Richiedi un’analisi clinica basata su una combinazione di sintomi e fattori di rischio
+    </div>
+    <div class="prompt-preview">
+      Un paziente ha [LISTA_SINTOMI] e [FATTORI_RISCHIO]. Quali patologie considerare?
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Cause plausibili di più sintomi",
+      "template": "Agisci come un medico esperto in clinica medica e ragiona su questa situazione:\n\n🧾 SINTOMI PRESENTI: [LISTA_SINTOMI]\n📌 FATTORI DI RISCHIO: [FATTORI_RISCHIO]\n🔍 OBIETTIVO: identificare cause mediche possibili\n\nElenca patologie o condizioni compatibili e suggerisci:\n- Esami iniziali da prescrivere\n- Se urgente o differibile\n- Eventuali diagnosi gravi da escludere prima",
+      "variables": [
+        { "name": "LISTA_SINTOMI", "label": "Elenco sintomi", "type": "textarea" },
+        { "name": "FATTORI_RISCHIO", "label": "Fattori di rischio conosciuti", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

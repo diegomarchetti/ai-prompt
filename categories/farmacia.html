@@ -1,0 +1,39 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Verifica Interazioni Farmacologiche -->
+  <div class="prompt-card">
+    <div class="prompt-title">🧪 Interazioni Farmaci</div>
+    <div class="prompt-description">
+      Controlla possibili interazioni tra farmaci in uso in un paziente
+    </div>
+    <div class="prompt-preview">
+      Il paziente assume: [FARMACI]. Sono presenti interazioni rilevanti?
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Verifica interazioni farmacologiche",
+      "template": "Agisci come un farmacologo clinico. Analizza la seguente lista di farmaci assunti da un paziente:\n\n💊 FARMACI IN USO:\n[FARMACI]\n\nFornisci:\n- Eventuali interazioni rilevanti (farmacodinamiche, farmacocinetiche)\n- Rischi associati\n- Consigli di monitoraggio o modifiche terapeutiche\n\nPuoi anche indicare alternative più sicure se note.",
+      "variables": [
+        { "name": "FARMACI", "label": "Elenco farmaci assunti (principi attivi o commerciali)", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Sostituzione o alternativa terapeutica -->
+  <div class="prompt-card">
+    <div class="prompt-title">🔄 Alternativa Farmacologica</div>
+    <div class="prompt-description">
+      Richiedi un’alternativa a un farmaco per allergia, intolleranza o costo
+    </div>
+    <div class="prompt-preview">
+      Il paziente non tollera [FARMACO], cosa si può usare in alternativa?
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Alternativa terapeutica",
+      "template": "Sei un farmacista ospedaliero. Suggerisci un&#39;alternativa terapeutica al seguente farmaco:\n\n💊 FARMACO: [FARMACO]\n📋 MOTIVO DELLA SOSTITUZIONE: [MOTIVO]\n👤 CONDIZIONI CLINICHE DEL PAZIENTE: [CONDIZIONI]\n\nL&#39;alternativa deve:\n- Avere simile efficacia terapeutica\n- Essere più tollerata o meglio accessibile\n- Evitare interazioni o effetti collaterali segnalati\n\nSe possibile, includi nome generico e commerciale.",
+      "variables": [
+        { "name": "FARMACO", "label": "Farmaco da sostituire", "type": "text" },
+        { "name": "MOTIVO", "label": "Motivazione (allergia, costo, effetti avversi...)", "type": "text" },
+        { "name": "CONDIZIONI", "label": "Condizioni cliniche rilevanti", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

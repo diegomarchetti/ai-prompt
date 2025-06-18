@@ -1,0 +1,45 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Concept Grafico o UI -->
+  <div class="prompt-card">
+    <div class="prompt-title">🎨 Crea un Concept Grafico o UI</div>
+    <div class="prompt-description">
+      Ottieni un’idea visiva per interfacce, loghi, layout o stile grafico coerente con un brand
+    </div>
+    <div class="prompt-preview">
+      Genera un concept per [OGGETTO] in stile [STILE_DESIDERATO] per il brand [NOME_BRAND]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Crea un Concept Grafico o UI",
+      "template": "Genera un concept visivo originale per il seguente progetto:\n\n🎯 OGGETTO: [OGGETTO]\n🏷️ NOME BRAND/APP: [NOME_BRAND]\n🎨 STILE DESIDERATO: [STILE_DESIDERATO]\n📋 MESSAGGIO DA COMUNICARE: [MESSAGGIO]\n🎯 DESTINAZIONE D&#39;USO: [DESTINAZIONE_USO]\n\nFornisci:\n- Descrizione dell&#39;impatto visivo\n- Palette colori consigliata (HEX)\n- Elementi tipografici o grafici\n- Eventuali suggerimenti UX/UI\n\nIl tutto deve essere coerente, moderno e pronto per ispirare il team grafico.",
+      "variables": [
+        { "name": "OGGETTO", "label": "Tipo di oggetto grafico (UI, logo, layout...)", "type": "text" },
+        { "name": "NOME_BRAND", "label": "Nome del brand/app", "type": "text" },
+        { "name": "STILE_DESIDERATO", "label": "Stile visivo richiesto", "type": "text" },
+        { "name": "MESSAGGIO", "label": "Messaggio o mood da comunicare", "type": "textarea" },
+        { "name": "DESTINAZIONE_USO", "label": "Dove verrà usato (web, mobile, stampa...)", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Descrizione Immagine per AI -->
+  <div class="prompt-card">
+    <div class="prompt-title">🖼️ Prompt per Generare Immagine AI</div>
+    <div class="prompt-description">
+      Scrivi una descrizione efficace e dettagliata da usare in generatori di immagini come Midjourney o DALL·E
+    </div>
+    <div class="prompt-preview">
+      Descrivi l&#39;immagine di [SOGGETTO] in stile [STILE_VISIVO] con [ELEMENTI]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Prompt per Generare Immagine AI",
+      "template": "Scrivi un prompt dettagliato per generare un&#39;immagine con un tool AI (es. Midjourney, DALL·E):\n\n📌 SOGGETTO IMMAGINE: [SOGGETTO]\n🎨 STILE VISIVO: [STILE_VISIVO]\n🧩 ELEMENTI AGGIUNTIVI: [ELEMENTI]\n🌈 ATMOSFERA / LUCI / COLORI: [ATMOSFERA]\n📐 FORMATO O ASPETTO TECNICO: [FORMATO]\n\nIl prompt deve essere:\n- Ricco di dettagli descrittivi\n- Ordinato e leggibile (può usare virgole o elenchi)\n- Ottimizzato per ottenere risultati visivamente coerenti",
+      "variables": [
+        { "name": "SOGGETTO", "label": "Soggetto dell&#39;immagine", "type": "textarea" },
+        { "name": "STILE_VISIVO", "label": "Stile (es. cyberpunk, minimal, 3D...)", "type": "text" },
+        { "name": "ELEMENTI", "label": "Elementi aggiuntivi da includere", "type": "text" },
+        { "name": "ATMOSFERA", "label": "Mood, luci o ambientazione", "type": "text" },
+        { "name": "FORMATO", "label": "Formato finale (es. square, widescreen, 8K...)", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

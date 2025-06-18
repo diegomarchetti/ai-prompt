@@ -1,0 +1,44 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Piano Dietetico Personalizzato -->
+  <div class="prompt-card">
+    <div class="prompt-title">🥗 Piano Alimentare</div>
+    <div class="prompt-description">
+      Richiedi un piano nutrizionale su misura in base a patologie, abitudini o obiettivi
+    </div>
+    <div class="prompt-preview">
+      Crea un piano per paziente con [CONDIZIONI], che desidera [OBIETTIVO]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Piano alimentare personalizzato",
+      "template": "Agisci come un dietista clinico. Formula un piano alimentare per il seguente paziente:\n\n👤 ETA: [ETA]\n📋 CONDIZIONI MEDICHE: [CONDIZIONI]\n🥅 OBIETTIVO DIETETICO: [OBIETTIVO]\n🍽️ ABITUDINI / RESTRIZIONI: [PREFERENZE]\n\nIl piano deve essere:\n- Suddiviso in 5 pasti (colazione, spuntino, pranzo...)\n- Nutriente, bilanciato e realistico\n- Con note sulle scelte alimentari\n\nPuoi includere anche kcal stimate se richiesto.",
+      "variables": [
+        { "name": "ETA", "label": "Età del paziente", "type": "text" },
+        { "name": "CONDIZIONI", "label": "Condizioni cliniche (es. diabete, obesità...)", "type": "textarea" },
+        { "name": "OBIETTIVO", "label": "Obiettivo nutrizionale (es. perdita peso, controllo glicemia...)", "type": "text" },
+        { "name": "PREFERENZE", "label": "Abitudini alimentari, allergie, dieta speciale", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Valutazione nutrizionale clinica -->
+  <div class="prompt-card">
+    <div class="prompt-title">⚖️ Valutazione Nutrizionale</div>
+    <div class="prompt-description">
+      Interpreta dati clinici per stimare stato nutrizionale e rischio di malnutrizione
+    </div>
+    <div class="prompt-preview">
+      Il paziente pesa [PESO]kg, è alto [ALTEZZA]cm, BMI [BMI], albumina [ALB]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Valutazione nutrizionale clinica",
+      "template": "Sei un nutrizionista clinico. Valuta lo stato nutrizionale di un paziente con i seguenti dati:\n\n⚖️ PESO: [PESO]\n📏 ALTEZZA: [ALTEZZA]\n📊 BMI: [BMI]\n🩸 ALBUMINA: [ALB]\n🧾 ALTRI PARAMETRI CLINICI: [PARAMETRI]\n\nFornisci:\n- Stato nutrizionale stimato\n- Rischio di malnutrizione (es. secondo MUST, NRS-2002, etc.)\n- Eventuale necessità di supporto nutrizionale\n- Suggerimenti per follow-up o consulto dietologico",
+      "variables": [
+        { "name": "PESO", "label": "Peso (kg)", "type": "text" },
+        { "name": "ALTEZZA", "label": "Altezza (cm)", "type": "text" },
+        { "name": "BMI", "label": "Indice di massa corporea (BMI)", "type": "text" },
+        { "name": "ALB", "label": "Albumina sierica (g/dL)", "type": "text" },
+        { "name": "PARAMETRI", "label": "Altri parametri o sintomi clinici", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

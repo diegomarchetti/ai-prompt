@@ -1,0 +1,45 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Interpretazione Spirometria -->
+  <div class="prompt-card">
+    <div class="prompt-title">📉 Interpretazione Spirometria</div>
+    <div class="prompt-description">
+      Analizza i dati spirometrici e valuta la funzione respiratoria del paziente
+    </div>
+    <div class="prompt-preview">
+      Il paziente ha FEV1 [FEV1], FVC [FVC], rapporto FEV1/FVC [RAPPORTO]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Interpretazione spirometria",
+      "template": "Agisci come un fisiopatologo respiratorio. Interpreta la seguente spirometria:\n\n📈 FEV1: [FEV1]\n📈 FVC: [FVC]\n📊 RAPPORTO FEV1/FVC: [RAPPORTO]\n📌 ALTRI VALORI SPIROMETRICI: [VALORI_EXTRA]\n\nFornisci:\n- Tipo di alterazione (ostruttiva, restrittiva, mista)\n- Gravità dell&#39;alterazione\n- Diagnosi sospette compatibili (es. BPCO, asma...)\n- Suggerimenti per approfondimento (es. test broncodilatazione)",
+      "variables": [
+        { "name": "FEV1", "label": "Valore FEV1 (ml o % predetto)", "type": "text" },
+        { "name": "FVC", "label": "Valore FVC", "type": "text" },
+        { "name": "RAPPORTO", "label": "Rapporto FEV1/FVC", "type": "text" },
+        { "name": "VALORI_EXTRA", "label": "Altri dati spirometrici", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Emogasanalisi a riposo o sforzo -->
+  <div class="prompt-card">
+    <div class="prompt-title">🩸 Interpretazione Emogas</div>
+    <div class="prompt-description">
+      Analizza i risultati dell&#39;emogasanalisi per identificare alterazioni e suggerire cause
+    </div>
+    <div class="prompt-preview">
+      pH: [PH], pCO₂: [PCO2], pO₂: [PO2], HCO₃⁻: [HCO3], SaO₂: [SAO2]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Analisi emogasanalisi arteriosa",
+      "template": "Sei un pneumologo. Interpreta l&#39;emogasanalisi riportata:\n\n🩺 pH: [PH]\n🌬️ pCO₂: [PCO2]\n💨 pO₂: [PO2]\n🧪 HCO₃⁻: [HCO3]\n🩸 SaO₂: [SAO2]\n📌 CONTESTO CLINICO: [STORIA]\n\nFornisci:\n- Se l&#39;emogas è normale, alcalosi, acidosi (metabolica, respiratoria)\n- Se presente compensazione\n- Se vi è ipossiemia, e in che grado\n- Diagnosi e consigli di approfondimento",
+      "variables": [
+        { "name": "PH", "label": "pH", "type": "text" },
+        { "name": "PCO2", "label": "pCO₂ (mmHg)", "type": "text" },
+        { "name": "PO2", "label": "pO₂ (mmHg)", "type": "text" },
+        { "name": "HCO3", "label": "Bicarbonato HCO₃⁻ (mmol/L)", "type": "text" },
+        { "name": "SAO2", "label": "Saturazione SaO₂ (%)", "type": "text" },
+        { "name": "STORIA", "label": "Contesto clinico / sospetto", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>
