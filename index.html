@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prompt Library - La Tua Libreria di Prompt AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="header">
+        <h2>🚀 Prompt Library</h2>
+      </div>
+    </br></br>
+      <!-- <input type="text" class="search-box" placeholder="Cerca prompt..." id="searchBox"/> -->
+      <div id="categoriesContainer"></div>
+          <div><button id="guidaBtn" class="guidaBtn">❓ Guida</button></div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <div class="breadcrumb" id="breadcrumb">
+        <a href="#" onclick="showAllPrompts()"></a>
+      </div>
+      
+      
+<div id="promptsContainer">
+  <div style="text-align: center; padding: 50px;">
+    <h2>👋 Benvenuto nella tua Prompt Library!</h2>
+    <p>Seleziona una categoria dalla sidebar per iniziare</p>
+
+    <div style="max-width: 850px; margin: 5px auto; text-align: left; font-size: 1rem; line-height: 1.7; color: #444; background: #f8f9fa; border-radius: 15px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+      <h3 style="color:#2c3e50; margin-bottom: 15px;">🧠 Perché usare prompt efficaci è fondamentale</h3>
+      <p>Nel mondo dell’Intelligenza Artificiale, la <strong>qualità delle risposte</strong> dipende in gran parte dalla <strong>qualità delle domande</strong>.
+        Un <strong>prompt</strong> ben scritto è come una chiave che apre esattamente la porta che stavi cercando: <u>chiaro</u>, <u>specifico</u> e <u>strutturato</u>.</p>
+
+      <ul style="margin: 20px 0; padding-left: 20px;">
+        <li>🔍 Migliora la <strong>precisione delle risposte</strong></li>
+        <li>⚡ Riduce il tempo di revisione e correzione</li>
+        <li>🧩 Guida l’AI a ragionare in modo più <strong>logico e mirato</strong></li>
+        <li>🎯 Adatta l’output al <strong>tono</strong>, <strong>pubblico</strong> e <strong>contesto</strong> desiderati</li>
+      </ul>
+
+      <p>Questa applicazione ti offre una libreria organizzata di prompt già ottimizzati per diversi contesti: sanità, comunicazione, sviluppo software, design, business e altro ancora.</p></br>
+
+      <p><strong>✅ Cosa puoi fare:</strong></p>
+      <ul style="margin: 10px 0 20px 0; padding-left: 20px;">
+        <li>📂 Esplora i prompt disponibili per ogni categoria</li>
+        <li>✍️ Personalizza le variabili per adattarli al tuo caso</li>
+        <li>📋 Copiali e usali direttamente con i tuoi strumenti AI</li>
+        <li>🛠️ Analizzali come esempio e migliorali secondo le tue esigenze</li>
+      </ul>
+
+      <p>💡 <em>Sperimenta, modifica, prova varianti: l’arte del Prompt Engineering è una competenza che si affina con l’uso.</em></p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+    <!-- MODAL PROMPT -->
+    <div class="modal" id="promptModal">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="modalTitle">Personalizza Prompt</h3>
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="variables-panel" id="variablesPanel"></div>
+        <textarea class="prompt-editor" id="promptEditor" placeholder="Il tuo prompt apparirà qui..."></textarea>
+        <div class="action-buttons">
+            <button class="btn btn-secondary" onclick="closeModal()">Annulla</button>
+            <button class="btn btn-primary" onclick="updatePrompt()">Aggiorna Prompt</button>
+            <button class="btn btn-success" onclick="copyPrompt()">📋 Copia Prompt</button>
+        </div>
+        </div>
+    </div>
+
+    <div id="guidaModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="chiudiGuida">&times;</span>
+            <h2>📘 Guida all'Applicazione</h2></br>
+            <p><strong>Benvenuto!</strong> Questa applicazione ti permette di navigare una libreria di prompt AI per usi professionali in sanità, comunicazione, programmazione e altro ancora.</p>
+
+        <h3>🔍 Come funziona</h3>
+                <ul>
+                <li>Seleziona una <strong>categoria</strong> dalla barra laterale</li>
+                <li>Clicca su una <strong>sottocategoria</strong> per caricare i prompt</li>
+                <li>Personalizza le variabili nei campi richiesti</li>
+                <li>Copia il prompt finale oppure clicca su <em>“Usa questo Prompt”</em> per aprirlo in un modello</li>
+                </ul>
+            
+        <h3>👨‍💻 Autore</h3>
+            <p>Applicazione creata da <strong>Diego Marchetti</strong>, tecnico informatico presso i SIstemi Informativi dell'Ospedale Domus Salutis<br>
+            Appassionato di scripting, AI generativa e interfacce grafiche Python.</p>
+
+            <h3>⚠️ Note e Avvertenze</h3>
+            <ul>
+            <li>I prompt sono pensati per supportare l'attività clinica e non sostituiscono il giudizio medico.</li>
+            <li>Utilizzare con cautela le risposte AI: verifica sempre fonti e coerenza clinica.</li>
+            <li>L'autore non è responsabile dell’uso improprio o delle decisioni prese esclusivamente tramite AI.</li>
+            </ul>
+        </div>
+    </div>
+
+
+  <!-- NOTIFICA COPIA -->
+  <div class="copy-notification" id="copyNotification">
+    ✅ Prompt copiato negli appunti!
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
