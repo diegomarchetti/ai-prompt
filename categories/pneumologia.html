@@ -1,0 +1,42 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Diagnosi differenziale respiratoria -->
+  <div class="prompt-card">
+    <div class="prompt-title">🌬️ Diagnosi Differenziale</div>
+    <div class="prompt-description">
+      Analizza i sintomi respiratori e suggerisce diagnosi differenziali e test utili
+    </div>
+    <div class="prompt-preview">
+      Il paziente riferisce [SINTOMI], ha una storia di [STORIA], ed è in terapia con [FARMACI]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Diagnosi differenziale respiratoria",
+      "template": "Agisci come uno pneumologo clinico. Valuta questo paziente:\n\n😤 SINTOMI RESPIRATORI: [SINTOMI]\n📜 STORIA CLINICA: [STORIA]\n💊 TERAPIE ATTUALI: [FARMACI]\n\nFornisci:\n- Diagnosi differenziali probabili (es. asma, BPCO, fibrosi, infezione...)\n- Test consigliati (spirometria, RX, emogas, etc.)\n- Grado di urgenza o follow-up\n\nFormato tabellare o elenco con priorità clinica.",
+      "variables": [
+        { "name": "SINTOMI", "label": "Sintomi respiratori principali", "type": "textarea" },
+        { "name": "STORIA", "label": "Storia clinica e fattori di rischio", "type": "textarea" },
+        { "name": "FARMACI", "label": "Terapie attuali", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Ottimizzazione terapia respiratoria -->
+  <div class="prompt-card">
+    <div class="prompt-title">🫁 Ottimizzazione Terapia</div>
+    <div class="prompt-description">
+      Valuta la terapia per BPCO, asma o altre condizioni e suggerisce aggiustamenti
+    </div>
+    <div class="prompt-preview">
+      Il paziente è in terapia con [TERAPIA], sintomi attuali: [SINTOMI]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Ottimizzazione trattamento respiratorio",
+      "template": "Sei uno pneumologo esperto. Valuta l&#39;adeguatezza della terapia attuale per questo paziente respiratorio:\n\n💊 TERAPIA IN USO: [TERAPIA]\n📋 DIAGNOSI: [DIAGNOSI]\n😤 SINTOMI ATTUALI: [SINTOMI]\n🩺 DATI STRUMENTALI (se disponibili): [DATI]\n\nFornisci:\n- Valutazione dell&#39;appropriatezza\n- Possibili modifiche terapeutiche (escalation/de-escalation)\n- Controlli consigliati\n\nUsa stile da referto specialistico per supporto clinico.",
+      "variables": [
+        { "name": "TERAPIA", "label": "Terapia in atto", "type": "textarea" },
+        { "name": "DIAGNOSI", "label": "Diagnosi nota (es. BPCO, asma...)", "type": "text" },
+        { "name": "SINTOMI", "label": "Sintomi attuali", "type": "textarea" },
+        { "name": "DATI", "label": "Dati aggiuntivi (spirometria, RX...)", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

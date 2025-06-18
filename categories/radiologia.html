@@ -1,0 +1,40 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Spiegazione referto radiologico -->
+  <div class="prompt-card">
+    <div class="prompt-title">🩻 Spiega il Referto Radiologico</div>
+    <div class="prompt-description">
+      Fornisci una spiegazione clinica del referto in un linguaggio tecnico o semplificato
+    </div>
+    <div class="prompt-preview">
+      Spiega questo referto di [TIPO_ESAME]: “[TESTO_REF]”...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Spiegazione referto radiologico",
+      "template": "Agisci come un radiologo esperto. Interpreta e spiega il seguente referto:\n\n📄 TIPO ESAME: [TIPO_ESAME]\n🩻 REFERTAZIONE: [TESTO_REF]\n📚 STORIA CLINICA (facoltativa): [STORIA]\n\nFornisci:\n- Un riassunto del referto in linguaggio clinico\n- Spiegazioni su eventuali anomalie\n- Se utile, significato clinico o suggerimenti per follow-up\n- Eventuale traduzione in linguaggio comprensibile al paziente",
+      "variables": [
+        { "name": "TIPO_ESAME", "label": "Tipo di esame (TC, RX, RMN, ECO...)", "type": "text" },
+        { "name": "TESTO_REF", "label": "Testo del referto radiologico", "type": "textarea" },
+        { "name": "STORIA", "label": "Contesto clinico del paziente", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Refertazione alternativa -->
+  <div class="prompt-card">
+    <div class="prompt-title">📝 Riformula Referto</div>
+    <div class="prompt-description">
+      Riscrivi un referto radiologico per renderlo più chiaro, ordinato o comprensibile
+    </div>
+    <div class="prompt-preview">
+      Riscrivi questo referto: “[TESTO_REF]”, con stile clinico o per il paziente...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Riformulazione referto radiologico",
+      "template": "Agisci come un medico radiologo. Riformula il seguente referto in maniera ordinata e chiara:\n\n📝 REFERTAZIONE ORIGINALE: [TESTO_REF]\n🎯 STILE RICHIESTO: [STILE]\n\nStili possibili:\n- Tecnico e strutturato (uso clinico)\n- Semplificato per il paziente\n- Sintetico per cartella clinica\n\nMigliora sintassi, struttura e chiarezza.",
+      "variables": [
+        { "name": "TESTO_REF", "label": "Testo originale del referto", "type": "textarea" },
+        { "name": "STILE", "label": "Stile desiderato (clinico, semplice, sintetico)", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

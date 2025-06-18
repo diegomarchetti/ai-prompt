@@ -1,0 +1,42 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Triage Clinico Sintomatologico -->
+  <div class="prompt-card">
+    <div class="prompt-title">📋 Valutazione Sintomi</div>
+    <div class="prompt-description">
+      Valuta un insieme di sintomi e fornisce possibili diagnosi differenziali
+    </div>
+    <div class="prompt-preview">
+      Il paziente riferisce [SINTOMI], è affetto da [COMORB], assume [FARMACI]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Valutazione clinica iniziale",
+      "template": "Sei un medico di medicina generale. Valuta il seguente paziente:\n\n🩺 SINTOMI: [SINTOMI]\n📋 COMORBIDITÀ: [COMORB]\n💊 TERAPIE IN CORSO: [FARMACI]\n\nFornisci:\n- Ipotesi diagnostiche plausibili\n- Red flags se presenti\n- Esami consigliati (laboratorio, strumentali)\n- Eventuali terapie iniziali empiriche\n\nStruttura le informazioni in elenco ordinato.",
+      "variables": [
+        { "name": "SINTOMI", "label": "Sintomi principali", "type": "textarea" },
+        { "name": "COMORB", "label": "Comorbidità del paziente", "type": "textarea" },
+        { "name": "FARMACI", "label": "Farmaci in uso", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Gestione cronico complesso -->
+  <div class="prompt-card">
+    <div class="prompt-title">🧓 Paziente Cronico Complesso</div>
+    <div class="prompt-description">
+      Suggerimenti di gestione per pazienti con multimorbidità, politerapia e fragilità
+    </div>
+    <div class="prompt-preview">
+      Paziente di [ETA] anni con [PATOLOGIE], segue [TERAPIE], vive in [CONTESTO]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Gestione paziente cronico complesso",
+      "template": "Agisci come un MMG esperto in gestione del paziente cronico. Valuta questo caso:\n\n👤 ETA: [ETA]\n📋 PATOLOGIE PRINCIPALI: [PATOLOGIE]\n💊 TERAPIE ATTUALI: [TERAPIE]\n🏠 CONTESTO SOCIALE / ABITATIVO: [CONTESTO]\n\nFornisci:\n- Rischi clinici e priorità gestionali\n- Suggerimenti per semplificare terapia (deprescribing, switch)\n- Monitoraggi essenziali\n- Collaborazione con specialista se necessaria\n\nOrganizza le informazioni per aree di intervento.",
+      "variables": [
+        { "name": "ETA", "label": "Età del paziente", "type": "text" },
+        { "name": "PATOLOGIE", "label": "Patologie rilevanti", "type": "textarea" },
+        { "name": "TERAPIE", "label": "Farmaci in uso", "type": "textarea" },
+        { "name": "CONTESTO", "label": "Contesto di vita (es. solo, con caregiver...)", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

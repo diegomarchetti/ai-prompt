@@ -1,0 +1,45 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Scaletta o Abstract per Tesi/Articolo -->
+  <div class="prompt-card">
+    <div class="prompt-title">📚 Scrivi Abstract o Scaletta</div>
+    <div class="prompt-description">
+      Genera una scaletta o un abstract accademico coerente con l’argomento e obiettivo della ricerca
+    </div>
+    <div class="prompt-preview">
+      Scrivi un abstract o una scaletta per [TIPO_LAVORO] sul tema [ARGOMENTO_TESI]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Scrivi Abstract o Scaletta",
+      "template": "Genera una bozza di abstract o una scaletta per un lavoro accademico.\\n\\n📄 TIPO LAVORO: [TIPO_LAVORO]\\n🎓 TITOLO/ARGOMENTO: [ARGOMENTO_TESI]\\n🎯 OBIETTIVO RICERCA: [OBIETTIVO]\\n📍 CONTESTO ACCADEMICO: [CONTESTO]\\n🧪 METODOLOGIA (se nota): [METODO]\\n\\nIl risultato deve includere:\\n- Una breve descrizione introduttiva\\n- Struttura suggerita (titoli sezioni o punti)\\n- Tono formale e coerente con l’ambito accademico",
+      "variables": [
+        { "name": "TIPO_LAVORO", "label": "Tipo di lavoro (tesi, articolo, relazione...)", "type": "select", "options": ["Tesi triennale", "Tesi magistrale", "Articolo scientifico", "Relazione di progetto", "Altro"] },
+        { "name": "ARGOMENTO_TESI", "label": "Argomento o titolo provvisorio", "type": "text" },
+        { "name": "OBIETTIVO", "label": "Obiettivo della ricerca", "type": "text" },
+        { "name": "CONTESTO", "label": "Ambito accademico o corso", "type": "text" },
+        { "name": "METODO", "label": "Metodo previsto (opzionale)", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Ricerca Bibliografica e Fonti -->
+  <div class="prompt-card">
+    <div class="prompt-title">🔬 Ricerca Bibliografica e Fonti</div>
+    <div class="prompt-description">
+      Ottieni suggerimenti per fonti accademiche, paper scientifici o riferimenti attendibili
+    </div>
+    <div class="prompt-preview">
+      Trova fonti accademiche affidabili su [TOPIC] per una [TIPO_LAVORO]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Ricerca Bibliografica e Fonti",
+      "template": "Fornisci una ricerca bibliografica accurata e tematica su:\\n\\n📚 TEMA DI RICERCA: [TOPIC]\\n🎓 AMBITO DISCIPLINARE: [DISCIPLINA]\\n📖 LIVELLO LAVORO: [TIPO_LAVORO]\\n🧾 TIPOLOGIA FONTI: [TIPO_FONTI]\\n📍 STRUMENTI USATI O RICHIESTI: [DATABASE]\\n\\nElenca le fonti in formato ordinato (APA o Harvard), includi link dove possibile.\\nPuoi anche suggerire libri, articoli e fonti online pertinenti.",
+      "variables": [
+        { "name": "TOPIC", "label": "Tema della ricerca", "type": "textarea" },
+        { "name": "DISCIPLINA", "label": "Area accademica o scientifica", "type": "text" },
+        { "name": "TIPO_LAVORO", "label": "Tipo di lavoro accademico", "type": "select", "options": ["Tesi", "Articolo", "Revisione", "Altro"] },
+        { "name": "TIPO_FONTI", "label": "Tipo di fonti (libri, paper, siti autorevoli)", "type": "text" },
+        { "name": "DATABASE", "label": "Strumenti di ricerca richiesti", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

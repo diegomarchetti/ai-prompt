@@ -1,0 +1,42 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Analisi profilo cognitivo -->
+  <div class="prompt-card">
+    <div class="prompt-title">🧠 Profilo Cognitivo</div>
+    <div class="prompt-description">
+      Analizza i risultati di test cognitivi e descrivi il profilo neuropsicologico del paziente
+    </div>
+    <div class="prompt-preview">
+      Paziente con MMSE [MMSE], GDS [GDS], ADL [ADL], presenta [SINTOMI]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Analisi profilo cognitivo",
+      "template": "Sei un neuropsicologo. Analizza il profilo cognitivo di un paziente con i seguenti dati:\n\n📊 MMSE: [MMSE]\n😔 GDS (depressione): [GDS]\n🧩 ADL / IADL: [ADL]\n🧠 SINTOMI CLINICI: [SINTOMI]\n\nFornisci:\n- Analisi del funzionamento cognitivo\n- Considerazioni su memoria, attenzione, orientamento\n- Possibili ipotesi (MCI, depressione pseudodemenza, demenza...)\n- Raccomandazioni per follow-up o test approfonditi",
+      "variables": [
+        { "name": "MMSE", "label": "Punteggio MMSE", "type": "text" },
+        { "name": "GDS", "label": "Punteggio GDS (Scala Depressione Geriatrica)", "type": "text" },
+        { "name": "ADL", "label": "Autonomia funzionale (ADL, IADL)", "type": "text" },
+        { "name": "SINTOMI", "label": "Sintomi cognitivi o comportamentali", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Disturbo dell’umore e comportamento -->
+  <div class="prompt-card">
+    <div class="prompt-title">😔 Disturbo dell&#39;Umore</div>
+    <div class="prompt-description">
+      Supporto clinico per identificare depressione, ansia o alterazioni comportamentali
+    </div>
+    <div class="prompt-preview">
+      Il paziente riferisce [SINTOMI_PSICO], è in trattamento con [FARMACI]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Analisi disturbo dell&#39;umore",
+      "template": "Sei uno psicologo clinico. Valuta il caso di un paziente con sintomi psicologici:\n\n📋 SINTOMI: [SINTOMI_PSICO]\n💊 TERAPIE ATTUALI: [FARMACI]\n🧠 EVENTI STRESSANTI / STORIA: [STORIA_PAZ]\n\nFornisci:\n- Ipotesi diagnostiche (depressione maggiore, ansia, adattamento...)\n- Scale valutative consigliate (es. PHQ-9, GAD-7)\n- Eventuali trattamenti (psicoterapia, approccio farmacologico, supporto ambientale)",
+      "variables": [
+        { "name": "SINTOMI_PSICO", "label": "Sintomi psicologici", "type": "textarea" },
+        { "name": "FARMACI", "label": "Farmaci in uso", "type": "text" },
+        { "name": "STORIA_PAZ", "label": "Eventi recenti, storia personale rilevante", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

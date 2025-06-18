@@ -1,0 +1,39 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Spiegazione referto in linguaggio semplice -->
+  <div class="prompt-card">
+    <div class="prompt-title">🔍 Spiegazione Referto</div>
+    <div class="prompt-description">
+      Traduci un referto medico in un linguaggio comprensibile al paziente
+    </div>
+    <div class="prompt-preview">
+      Spiega in modo chiaro il referto seguente: [TESTO_REF]
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Spiegazione referto in linguaggio semplice",
+      "template": "Agisci come un medico che deve spiegare a un paziente il seguente referto medico:\n\n📄 TESTO DEL REFERTO: [TESTO_REF]\n\nLa spiegazione deve:\n- Usare un linguaggio semplice e comprensibile\n- Evitare tecnicismi o spiegarli chiaramente\n- Evidenziare se il contenuto è normale, alterato o richiede approfondimenti\n\nFornisci una versione adatta alla comunicazione medico-paziente.",
+      "variables": [
+        { "name": "TESTO_REF", "label": "Testo del referto medico", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Analisi Clinica di un Referto -->
+  <div class="prompt-card">
+    <div class="prompt-title">🧪 Analisi Tecnica Referto</div>
+    <div class="prompt-description">
+      Analizza un referto clinico complesso e proponi ipotesi o esami successivi
+    </div>
+    <div class="prompt-preview">
+      Analizza il referto di [TIPO_REF] per capire eventuali anomalie...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Analisi tecnica referto",
+      "template": "Agisci come un medico specialista. Analizza il seguente referto clinico:\n\n📋 TIPO DI REFERTO: [TIPO_REF]\n📄 TESTO: [TESTO_REF]\n📚 STORIA CLINICA DEL PAZIENTE (facoltativa): [STORIA]\n\nFornisci:\n- Interpretazione tecnica dei risultati\n- Possibili significati clinici\n- Esami o follow-up raccomandati\n\nUsa linguaggio clinico per un medico o specializzando.",
+      "variables": [
+        { "name": "TIPO_REF", "label": "Tipo di referto (es. ECG, RMN, analisi sangue...)", "type": "text" },
+        { "name": "TESTO_REF", "label": "Contenuto del referto", "type": "textarea" },
+        { "name": "STORIA", "label": "Eventuale storia clinica (opzionale)", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

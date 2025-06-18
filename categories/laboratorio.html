@@ -1,0 +1,39 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Interpretazione esami del sangue -->
+  <div class="prompt-card">
+    <div class="prompt-title">🧪 Esami del Sangue</div>
+    <div class="prompt-description">
+      Analizza esami ematochimici e proponi possibili interpretazioni cliniche
+    </div>
+    <div class="prompt-preview">
+      Il paziente presenta emocromo con [VALORI], PCR [PCR], creatinina [CREAT]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Interpretazione esami ematochimici",
+      "template": "Agisci come un medico clinico esperto in laboratorio. Analizza i seguenti esami del sangue:\n\n📋 RISULTATI:\n[VALORI_ESAMI]\n\n🧠 STORIA CLINICA RILEVANTE (facoltativa): [STORIA]\n\nFornisci:\n- Valori fuori norma e possibili significati clinici\n- Patologie o condizioni da considerare\n- Esami di approfondimento suggeriti\n\nOrganizza per priorità clinica.",
+      "variables": [
+        { "name": "VALORI_ESAMI", "label": "Valori esami (emoglobina, leucociti, PCR, creatinina...)", "type": "textarea" },
+        { "name": "STORIA", "label": "Storia clinica (facoltativa)", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Interpretazione combinata esami -->
+  <div class="prompt-card">
+    <div class="prompt-title">🔬 Combinazione Marcatori</div>
+    <div class="prompt-description">
+      Analizza combinazioni complesse di valori (es. coagulazione, epatopatie, profili metabolici)
+    </div>
+    <div class="prompt-preview">
+      Il paziente ha PT [PT], INR [INR], AST [AST], GGT [GGT], glicemia [GLIC]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Analisi combinata valori laboratorio",
+      "template": "Sei un internista esperto in diagnostica di laboratorio. Interpreta i seguenti dati:\n\n📄 VALORI:\n[DATI]\n\n🧬 SOSPETTO CLINICO (facoltativo): [SOSPETTO]\n\nFornisci:\n- Valutazione complessiva (coerenze/incoerenze)\n- Patologie da considerare\n- Differenziali importanti da escludere\n\nPuoi suggerire ulteriori indagini strumentali o di laboratorio.",
+      "variables": [
+        { "name": "DATI", "label": "Valori rilevati (es. PT, INR, AST, GGT...)", "type": "textarea" },
+        { "name": "SOSPETTO", "label": "Sospetto clinico iniziale", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

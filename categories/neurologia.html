@@ -1,0 +1,41 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Valutazione caso neurologico -->
+  <div class="prompt-card">
+    <div class="prompt-title">🧠 Valutazione Neurologica</div>
+    <div class="prompt-description">
+      Formula ipotesi neurologiche in base ai sintomi e alla storia del paziente
+    </div>
+    <div class="prompt-preview">
+      Il paziente presenta [SINTOMI_NEURO], ha [ETA] anni, con storia [STORIA_NEURO]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Valutazione Neurologica",
+      "template": "Agisci come un neurologo esperto. Valuta il seguente caso clinico neurologico:\n\n🧠 SINTOMI: [SINTOMI_NEURO]\n👤 ETÀ DEL PAZIENTE: [ETA]\n📜 STORIA CLINICA: [STORIA_NEURO]\n\nFornisci:\n- Ipotesi diagnostiche plausibili (con priorità)\n- Rationale clinico\n- Esami neurologici consigliati (es. EEG, RMN, scale MMSE, etc.)\n- Urgenza o follow-up\n\nUsa linguaggio tecnico, come in un consulto specialistico.",
+      "variables": [
+        { "name": "SINTOMI_NEURO", "label": "Sintomi neurologici presenti", "type": "textarea" },
+        { "name": "ETA", "label": "Età del paziente", "type": "text" },
+        { "name": "STORIA_NEURO", "label": "Storia clinica neurologica", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Decadimento Cognitivo -->
+  <div class="prompt-card">
+    <div class="prompt-title">🧓 Sospetto Decadimento Cognitivo</div>
+    <div class="prompt-description">
+      Analisi di un paziente con disturbi cognitivi e suggerimenti di follow-up
+    </div>
+    <div class="prompt-preview">
+      Un paziente lamenta [SINTOMI_COGNITIVI], ha punteggio MMSE di [MMSE]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Sospetto decadimento cognitivo",
+      "template": "Sei un medico esperto in neuropsicologia e geriatria. Valuta il seguente paziente:\n\n🧠 SINTOMI COGNITIVI: [SINTOMI_COGNITIVI]\n📊 PUNTEGGIO MMSE: [MMSE]\n🧾 ALTRE INFORMAZIONI UTILI: [INFO_EXTRA]\n\nFornisci:\n- Ipotesi principali (Alzheimer? MCI? altre forme?)\n- Criteri per la diagnosi differenziale\n- Indagini consigliate (es. RMN, test neuropsicologici)\n- Consigli per comunicazione con caregiver",
+      "variables": [
+        { "name": "SINTOMI_COGNITIVI", "label": "Sintomi cognitivi segnalati", "type": "textarea" },
+        { "name": "MMSE", "label": "Punteggio MMSE", "type": "text" },
+        { "name": "INFO_EXTRA", "label": "Eventuali altri dati clinici", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

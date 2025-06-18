@@ -1,0 +1,43 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Automazione Attività Windows -->
+  <div class="prompt-card">
+    <div class="prompt-title">🖥️ Automazione con PowerShell</div>
+    <div class="prompt-description">
+      Crea uno script PowerShell per automatizzare attività su Windows
+    </div>
+    <div class="prompt-preview">
+      Genera uno script per automatizzare [ATTIVITÀ] in ambiente Windows...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Automazione con PowerShell",
+      "template": "Scrivi uno script PowerShell per automatizzare la seguente attività su Windows:\\n\\n⚙️ ATTIVITÀ: [ATTIVITÀ]\\n🖥️ AMBIENTE DI DESTINAZIONE: [AMBIENTE]\\n📄 OUTPUT DESIDERATO: [TIPO_OUTPUT]\\n🔐 PRIVILEGI: [NECESSITA_ADMIN]\\n\\nIl codice deve includere commenti, gestione errori e buona formattazione.",
+      "variables": [
+        { "name": "ATTIVITÀ", "label": "Attività da automatizzare", "type": "textarea" },
+        { "name": "AMBIENTE", "label": "Ambiente target (es. client, server, dominio)", "type": "text" },
+        { "name": "TIPO_OUTPUT", "label": "Tipo di output atteso (log, console, file...)", "type": "text" },
+        { "name": "NECESSITA_ADMIN", "label": "Richiede privilegi amministrativi?", "type": "select", "options": ["Sì", "No", "Dipende"] }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Gestione File e Cartelle -->
+  <div class="prompt-card">
+    <div class="prompt-title">📦 Gestione File & Cartelle</div>
+    <div class="prompt-description">
+      Script PowerShell per creare, copiare, rinominare o organizzare file e cartelle
+    </div>
+    <div class="prompt-preview">
+      Scrivi uno script per [OPERAZIONE] su file/cartelle nel percorso [PERCORSO]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Gestione File & Cartelle",
+      "template": "Crea uno script PowerShell che effettua la seguente operazione su file e cartelle:\\n\\n🗂️ OPERAZIONE: [OPERAZIONE]\\n📍 PERCORSO: [PERCORSO]\\n🔁 RICORSIVITÀ: [RICORSIVO]\\n📋 OUTPUT ATTESO: [OUTPUT_FILE]\\n\\nIl codice deve essere sicuro, con gestione errori e messaggi di log. Commenta ogni parte importante.",
+      "variables": [
+        { "name": "OPERAZIONE", "label": "Tipo di operazione (es. copia, rinomina, crea)", "type": "text" },
+        { "name": "PERCORSO", "label": "Percorso di lavoro", "type": "text" },
+        { "name": "RICORSIVO", "label": "Agire in modo ricorsivo?", "type": "select", "options": ["Sì", "No"] },
+        { "name": "OUTPUT_FILE", "label": "Output atteso (es. log, modifica file)", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>
