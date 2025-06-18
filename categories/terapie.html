@@ -1,0 +1,41 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Proposta terapeutica -->
+  <div class="prompt-card">
+    <div class="prompt-title">💊 Proposta Terapeutica</div>
+    <div class="prompt-description">
+      Suggerimenti terapeutici aggiornati e basati su evidenza per una patologia specifica
+    </div>
+    <div class="prompt-preview">
+      Qual è il trattamento raccomandato per [PATOLOGIA], in un paziente con [CONDIZIONI]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Proposta terapeutica basata su evidenze",
+      "template": "Sei un medico clinico che segue le linee guida internazionali. Suggerisci il trattamento più adeguato per:\n\n🦠 PATOLOGIA: [PATOLOGIA]\n👤 PROFILO DEL PAZIENTE: [CONDIZIONI]\n📋 EVENTUALI FARMACI ATTUALI: [FARMACI]\n\nIncludi:\n- Prima linea di trattamento\n- Trattamenti alternativi o complementari\n- Farmaci da evitare (interazioni, comorbidità)\n- Eventuali linee guida di riferimento (es. ESC, NICE, AIFA)",
+      "variables": [
+        { "name": "PATOLOGIA", "label": "Patologia o disturbo da trattare", "type": "text" },
+        { "name": "CONDIZIONI", "label": "Età, sesso, comorbidità, quadro clinico", "type": "textarea" },
+        { "name": "FARMACI", "label": "Farmaci già in uso", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Confronto tra opzioni terapeutiche -->
+  <div class="prompt-card">
+    <div class="prompt-title">⚖️ Confronto Terapie</div>
+    <div class="prompt-description">
+      Ottieni un confronto tra più trattamenti per valutare benefici, rischi e costi
+    </div>
+    <div class="prompt-preview">
+      Qual è la differenza tra [OPZIONE_1] e [OPZIONE_2] nel trattamento di [PATOLOGIA]?
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Confronto opzioni terapeutiche",
+      "template": "Agisci come un medico clinico esperto. Confronta le seguenti opzioni terapeutiche:\n\n📦 PATOLOGIA: [PATOLOGIA]\n🧪 TERAPIA 1: [OPZIONE_1]\n🧪 TERAPIA 2: [OPZIONE_2]\n\nIl confronto deve includere:\n- Efficacia (dati disponibili)\n- Effetti collaterali comuni\n- Interazioni note\n- Costi o accessibilità se rilevanti\n\nOrganizza le informazioni in tabella o elenco per una consultazione rapida.",
+      "variables": [
+        { "name": "PATOLOGIA", "label": "Patologia da trattare", "type": "text" },
+        { "name": "OPZIONE_1", "label": "Prima opzione terapeutica", "type": "text" },
+        { "name": "OPZIONE_2", "label": "Seconda opzione terapeutica", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

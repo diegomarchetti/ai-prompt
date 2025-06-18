@@ -1,0 +1,42 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Analisi SWOT Completa -->
+  <div class="prompt-card">
+    <div class="prompt-title">🧠 Analisi SWOT Completa</div>
+    <div class="prompt-description">
+      Valuta punti di forza, debolezza, opportunità e minacce per un progetto, brand o prodotto
+    </div>
+    <div class="prompt-preview">
+      Genera un'analisi SWOT per [OGGETTO] considerando [SETTORE] e [SCENARIO] attuale...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Analisi SWOT Completa",
+      "template": "Fornisci un\\u0027analisi SWOT dettagliata per il seguente caso:\\n\\n🏢 OGGETTO ANALISI: [OGGETTO]\\n📈 SETTORE: [SETTORE]\\n🌐 MERCATO O CONTESTO: [SCENARIO]\\n🎯 OBIETTIVO STRATEGICO: [OBIETTIVO]\\n\\nPresenta:\\n- Una tabella con 4 sezioni (Strengths, Weaknesses, Opportunities, Threats)\\n- Spiegazioni sintetiche per ogni punto\\n- Conclusione con valutazione generale e possibili azioni",
+      "variables": [
+        { "name": "OGGETTO", "label": "Oggetto dell&#39;analisi (es. brand, progetto, prodotto)", "type": "text" },
+        { "name": "SETTORE", "label": "Settore di riferimento", "type": "text" },
+        { "name": "SCENARIO", "label": "Mercato o contesto attuale", "type": "textarea" },
+        { "name": "OBIETTIVO", "label": "Obiettivo strategico", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Strategia da SWOT -->
+  <div class="prompt-card">
+    <div class="prompt-title">🔄 Strategie da Analisi SWOT</div>
+    <div class="prompt-description">
+      Suggerisci azioni pratiche a partire dall’analisi SWOT per migliorare la posizione competitiva
+    </div>
+    <div class="prompt-preview">
+      A partire da una SWOT, suggerisci strategie per [OBIETTIVO_STRATEGICO]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Strategie da Analisi SWOT",
+      "template": "Usa i risultati di una SWOT analysis per suggerire strategie utili.\\n\\n💡 RESOCONTO SWOT:\\n[SWOT_COMPLETA]\\n🎯 OBIETTIVO STRATEGICO: [OBIETTIVO_STRATEGICO]\\n🏁 PRIORITÀ AZIONI: [PRIORITÀ]\\n\\nFornisci:\\n- Strategie per sfruttare i punti di forza\\n- Soluzioni per mitigare le debolezze\\n- Azioni per cogliere le opportunità\\n- Contromisure per le minacce\\n\\nUsa un linguaggio chiaro e applicabile.",
+      "variables": [
+        { "name": "SWOT_COMPLETA", "label": "Risultati SWOT (puoi incollare o descrivere)", "type": "textarea" },
+        { "name": "OBIETTIVO_STRATEGICO", "label": "Obiettivo finale da raggiungere", "type": "text" },
+        { "name": "PRIORITÀ", "label": "Quali azioni prioritarie?", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

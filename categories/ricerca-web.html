@@ -1,0 +1,43 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Ricerca Strutturata Online -->
+  <div class="prompt-card">
+    <div class="prompt-title">🌍 Ricerca Strutturata Online</div>
+    <div class="prompt-description">
+      Ottieni una ricerca approfondita, sintetizzata e aggiornata su un argomento specifico
+    </div>
+    <div class="prompt-preview">
+      Fai una ricerca online su [ARGOMENTO], organizzando le informazioni per sezioni...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Ricerca Strutturata Online",
+      "template": "Effettua una ricerca approfondita e aggiornata sull\\u0027argomento seguente:\\n\\n📌 ARGOMENTO: [ARGOMENTO]\\n🎯 OBIETTIVO: [OBIETTIVO_RICERCA]\\n📁 STRUTTURA DESIDERATA: [STRUTTURA]\\n📍 FONTI CONSENTITE: [FONTI_AMMESSE]\\n\\nFornisci le informazioni in formato chiaro e suddiviso in sezioni logiche.\\nIncludi (se possibile):\\n- Dati aggiornati\\n- Link utili\\n- Brevi paragrafi ben organizzati\\n\\nEvita opinioni personali, mantieni un tono neutrale e informativo.",
+      "variables": [
+        { "name": "ARGOMENTO", "label": "Argomento da ricercare", "type": "textarea" },
+        { "name": "OBIETTIVO_RICERCA", "label": "Scopo della ricerca", "type": "text" },
+        { "name": "STRUTTURA", "label": "Struttura del risultato", "type": "select", "options": ["Sezioni con titoli", "Domande e risposte", "Elenco puntato", "Testo libero"] },
+        { "name": "FONTI_AMMESSE", "label": "Fonti preferite o escluse", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Riepilogo Tematico -->
+  <div class="prompt-card">
+    <div class="prompt-title">📌 Riepilogo Argomento Complesso</div>
+    <div class="prompt-description">
+      Sintetizza un argomento complesso in modo semplice e chiaro, adatto alla condivisione
+    </div>
+    <div class="prompt-preview">
+      Spiega in modo semplice il concetto di [TEMA], evidenziando punti chiave...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Riepilogo Argomento Complesso",
+      "template": "Spiega in modo semplice e sintetico il seguente argomento:\\n\\n📚 TEMA: [TEMA]\\n🎓 LIVELLO DESTINATARIO: [LIVELLO]\\n📌 ASPETTI IMPORTANTI: [ASPETTI]\\n💬 TONO: [TONO_DESIDERATO]\\n\\nLa spiegazione deve essere facilmente comprensibile, usare esempi se opportuni e presentare una struttura chiara con punti elenco o paragrafi brevi.",
+      "variables": [
+        { "name": "TEMA", "label": "Tema o concetto da spiegare", "type": "textarea" },
+        { "name": "LIVELLO", "label": "Livello del lettore", "type": "select", "options": ["Studente", "Professionista", "Pubblico generico", "Esperto"] },
+        { "name": "ASPETTI", "label": "Aspetti importanti da includere", "type": "text" },
+        { "name": "TONO_DESIDERATO", "label": "Tono della spiegazione", "type": "select", "options": ["Semplice", "Professionale", "Tecnico", "Conversazionale"] }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>
