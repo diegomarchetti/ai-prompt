@@ -1,0 +1,46 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Crea una Newsletter Promozionale -->
+  <div class="prompt-card">
+    <div class="prompt-title">📬 Newsletter Promozionale</div>
+    <div class="prompt-description">
+      Genera una newsletter accattivante per promuovere un prodotto, evento o servizio
+    </div>
+    <div class="prompt-preview">
+      Scrivi una newsletter coinvolgente per promuovere [OGGETTO_PROMOZIONE]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Newsletter Promozionale",
+      "template": "Scrivi una newsletter promozionale accattivante per un pubblico target.\\n\\n🛍️ OGGETTO DELLA PROMOZIONE: [OGGETTO_PROMOZIONE]\\n📅 DURATA: [PERIODO_OFFERTA]\\n👥 TARGET DI RIFERIMENTO: [TARGET_CLIENTI]\\n🎯 CALL TO ACTION: [CTA_DESIDERATA]\\n💬 TONO: [TONO_COMUNICAZIONE]\\n\\nSTRUTTURA:\\n1. Oggetto e anteprima\\n2. Saluto personalizzato\\n3. Valore dell\\u0027offerta o novità\\n4. Benefici per il lettore\\n5. Call to action efficace\\n6. Firma o footer aziendale\\n\\nLo stile deve essere coinvolgente, chiaro e in linea con il brand.",
+      "variables": [
+        { "name": "OGGETTO_PROMOZIONE", "label": "Oggetto della promozione", "type": "text" },
+        { "name": "PERIODO_OFFERTA", "label": "Periodo di validità", "type": "text" },
+        { "name": "TARGET_CLIENTI", "label": "Target di riferimento", "type": "text" },
+        { "name": "CTA_DESIDERATA", "label": "Call to Action desiderata", "type": "text" },
+        { "name": "TONO_COMUNICAZIONE", "label": "Tono della comunicazione", "type": "select", "options": ["Amichevole", "Professionale", "Urgente", "Persuasivo", "Informativo"] }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Post per Social Media -->
+  <div class="prompt-card">
+    <div class="prompt-title">📱 Post Social Media Coinvolgente</div>
+    <div class="prompt-description">
+      Scrivi un post per social media che promuova contenuti, eventi o valori del brand
+    </div>
+    <div class="prompt-preview">
+      Crea un post social per promuovere [CONTENUTO] con tono [TONO_SOCIAL]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Post Social Media Coinvolgente",
+      "template": "Scrivi un post per i social media per promuovere il seguente contenuto o messaggio:\\n\\n📣 TEMA/MESSAGGIO: [CONTENUTO]\\n📍 PIATTAFORMA: [PIATTAFORMA]\\n🎯 TIPOLOGIA POST: [TIPOLOGIA_POST]\\n👥 TARGET: [TARGET_AUDIENCE]\\n💬 TONO: [TONO_SOCIAL]\\n🖼️ SUGGERIMENTI VISIVI: [IDEA_VISUAL]\\n\\nIl post deve essere breve, accattivante, adatto al formato della piattaforma selezionata, e deve includere hashtag rilevanti o emoji ove opportuno.",
+      "variables": [
+        { "name": "CONTENUTO", "label": "Contenuto da promuovere", "type": "textarea" },
+        { "name": "PIATTAFORMA", "label": "Piattaforma", "type": "select", "options": ["Instagram", "Facebook", "LinkedIn", "Twitter/X", "TikTok", "Generico"] },
+        { "name": "TIPOLOGIA_POST", "label": "Tipo di post", "type": "select", "options": ["Promozione prodotto", "Annuncio evento", "Post motivazionale", "News o aggiornamento", "Valori del brand"] },
+        { "name": "TARGET_AUDIENCE", "label": "Target di riferimento", "type": "text" },
+        { "name": "TONO_SOCIAL", "label": "Tono del messaggio", "type": "select", "options": ["Coinvolgente", "Professionale", "Ironico", "Ispirazionale", "Creativo"] },
+        { "name": "IDEA_VISUAL", "label": "Suggerimento per visual", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

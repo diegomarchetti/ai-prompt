@@ -1,0 +1,43 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Pipeline CI/CD -->
+  <div class="prompt-card">
+    <div class="prompt-title">⚙️ Crea una Pipeline CI/CD</div>
+    <div class="prompt-description">
+      Genera una pipeline per integrazione e distribuzione continua usando lo strumento scelto
+    </div>
+    <div class="prompt-preview">
+      Scrivi una pipeline per [STRUMENTO] che compili, testi e distribuisca il progetto...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Crea una Pipeline CI/CD",
+      "template": "Crea una pipeline CI/CD per il seguente progetto:\\n\\n📦 PROGETTO: [TIPO_PROGETTO]\\n🔧 STRUMENTO: [STRUMENTO_CICD]\\n📂 OPERAZIONI DA INCLUDERE: [OPERAZIONI]\\n🚀 AMBIENTE DI DESTINAZIONE: [AMBIENTE_DEPLOY]\\n\\nLa pipeline deve prevedere:\\n- Step separati (es. build, test, deploy)\\n- Gestione degli errori\\n- Eventuali variabili o segreti (mockati)\\n\\nFornisci anche il file `.yaml` (o equivalente) completo, commentato e spiegato.",
+      "variables": [
+        { "name": "TIPO_PROGETTO", "label": "Tipo di progetto (es. app web, API, microservizio)", "type": "text" },
+        { "name": "STRUMENTO_CICD", "label": "Strumento CI/CD", "type": "select", "options": ["GitHub Actions", "GitLab CI", "Jenkins", "CircleCI", "Azure DevOps", "Altro"] },
+        { "name": "OPERAZIONI", "label": "Step da includere (build, test, lint, ecc.)", "type": "textarea" },
+        { "name": "AMBIENTE_DEPLOY", "label": "Ambiente di destinazione", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Automazione con Script DevOps -->
+  <div class="prompt-card">
+    <div class="prompt-title">📦 Automazione Provisioning o Container</div>
+    <div class="prompt-description">
+      Genera uno script per provisioning infrastruttura o configurazione container
+    </div>
+    <div class="prompt-preview">
+      Scrivi uno script per [OPERAZIONE] su [PIATTAFORMA] usando [LINGUAGGIO_TOOL]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Automazione Provisioning/Container",
+      "template": "Genera uno script per automatizzare un task DevOps:\\n\\n🛠️ OPERAZIONE: [OPERAZIONE]\\n🖥️ PIATTAFORMA TARGET: [PIATTAFORMA]\\n📄 TOOL O LINGUAGGIO: [LINGUAGGIO_TOOL]\\n🔐 RICHIESTA PRIVILEGI: [PRIVILEGI_ADMIN]\\n\\nLo script deve essere modulare, ben commentato, ed evitare dipendenze superflue. Può includere anche file complementari (es. Dockerfile, manifesti YAML, ecc.).",
+      "variables": [
+        { "name": "OPERAZIONE", "label": "Operazione da automatizzare", "type": "textarea" },
+        { "name": "PIATTAFORMA", "label": "Piattaforma o servizio", "type": "text" },
+        { "name": "LINGUAGGIO_TOOL", "label": "Linguaggio o tool", "type": "select", "options": ["Bash", "PowerShell", "Terraform", "Ansible", "Dockerfile", "Altro"] },
+        { "name": "PRIVILEGI_ADMIN", "label": "Richiede privilegi elevati?", "type": "select", "options": ["Sì", "No", "Solo alcune parti"] }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

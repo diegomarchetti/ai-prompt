@@ -1,0 +1,44 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Genera Query SQL -->
+  <div class="prompt-card">
+    <div class="prompt-title">🧮 Crea Query SQL</div>
+    <div class="prompt-description">
+      Scrivi query SQL per interrogare, aggiornare o analizzare dati in un database relazionale
+    </div>
+    <div class="prompt-preview">
+      Genera una query SQL per [OBIETTIVO] da eseguire su [NOME_TABELLA]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Crea Query SQL",
+      "template": "Scrivi una query SQL adatta a risolvere il seguente obiettivo:\\n\\n🎯 OBIETTIVO: [OBIETTIVO]\\n📋 TABELLA DI RIFERIMENTO: [NOME_TABELLA]\\n📊 COLONNE DISPONIBILI: [COLONNE_DISPONIBILI]\\n⚙️ CONDIZIONI / FILTRI: [FILTRI]\\n📄 TIPO DATABASE: [TIPO_DB]\\n\\nFornisci la query, spiegazione riga per riga e suggerimenti per eventuali ottimizzazioni.",
+      "variables": [
+        { "name": "OBIETTIVO", "label": "Obiettivo della query", "type": "textarea" },
+        { "name": "NOME_TABELLA", "label": "Nome tabella", "type": "text" },
+        { "name": "COLONNE_DISPONIBILI", "label": "Colonne disponibili", "type": "text" },
+        { "name": "FILTRI", "label": "Condizioni/filtri da applicare", "type": "text" },
+        { "name": "TIPO_DB", "label": "Tipo di database", "type": "select", "options": ["MySQL", "PostgreSQL", "SQL Server", "SQLite", "Altro"] }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Progetta uno Schema Database -->
+  <div class="prompt-card">
+    <div class="prompt-title">🏗️ Schema Database da Requisiti</div>
+    <div class="prompt-description">
+      Crea uno schema relazionale di database partendo da requisiti funzionali o scenari
+    </div>
+    <div class="prompt-preview">
+      Progetta uno schema per un database che gestisca [SCENARIO] con relazioni coerenti...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Schema Database da Requisiti",
+      "template": "Progetta uno schema relazionale per un database in base al seguente scenario:\\n\\n📘 SCENARIO: [SCENARIO]\\n🧩 ENTITÀ PRINCIPALI: [ENTITA]\\n🔁 RELAZIONI TRA ENTITÀ: [RELAZIONI]\\n⚙️ TIPO DB TARGET: [TIPO_DB]\\n\\nFornisci:\\n- Descrizione delle tabelle\\n- Nomi campi\\n- Tipi di dato\\n- Relazioni con chiavi primarie/esterne\\n\\nPuoi includere uno schema visuale testuale (tipo ERD semplificato) se utile.",
+      "variables": [
+        { "name": "SCENARIO", "label": "Scenario o caso d&#39;uso", "type": "textarea" },
+        { "name": "ENTITA", "label": "Entità principali", "type": "text" },
+        { "name": "RELAZIONI", "label": "Relazioni tra entità", "type": "text" },
+        { "name": "TIPO_DB", "label": "Tipo di database", "type": "select", "options": ["MySQL", "PostgreSQL", "SQL Server", "SQLite", "Altro"] }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

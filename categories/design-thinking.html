@@ -1,0 +1,43 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Soluzione Creativa a un Problema -->
+  <div class="prompt-card">
+    <div class="prompt-title">💡 Soluzione Creativa a un Problema</div>
+    <div class="prompt-description">
+      Ottieni idee pratiche, innovative e fuori dagli schemi per risolvere un problema reale
+    </div>
+    <div class="prompt-preview">
+      Trova una soluzione creativa per [PROBLEMA] considerando il contesto [CONTESTO]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Soluzione Creativa a un Problema",
+      "template": "Applica un approccio creativo e umano-centrico per proporre una soluzione a:\n\n❗ PROBLEMA: [PROBLEMA]\n📍 CONTESTO: [CONTESTO]\n👥 TIPO DI UTENTE COINVOLTO: [UTENTE]\n🎯 OBIETTIVO FINALE: [OBIETTIVO]\n\nFornisci:\n- Descrizione della soluzione\n- Perché funziona\n- Eventuali rischi o limiti\n\nUsa un linguaggio semplice, focalizzato sull&#39;impatto e sull&#39;utilità.",
+      "variables": [
+        { "name": "PROBLEMA", "label": "Problema da risolvere", "type": "textarea" },
+        { "name": "CONTESTO", "label": "Contesto in cui si presenta", "type": "text" },
+        { "name": "UTENTE", "label": "Tipo di utente coinvolto", "type": "text" },
+        { "name": "OBIETTIVO", "label": "Obiettivo che si vuole raggiungere", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Supporto alle Fasi del Design Thinking -->
+  <div class="prompt-card">
+    <div class="prompt-title">🧩 Fasi del Design Thinking</div>
+    <div class="prompt-description">
+      Ottieni idee e strumenti per ogni fase del Design Thinking: Empatia, Definizione, Ideazione...
+    </div>
+    <div class="prompt-preview">
+      Supporta il processo creativo per [TEMA] in fase [FASE] con obiettivo [OBIETTIVO]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Fasi del Design Thinking",
+      "template": "Supporta il lavoro nelle seguenti fasi del Design Thinking:\n\n📌 TEMA O SFIDA: [TEMA]\n🎯 FASE DEL PROCESSO: [FASE]\n🧠 OBIETTIVO SPECIFICO: [OBIETTIVO]\n👥 TIPOLOGIA DI UTENTI: [UTENTI]\n\nRestituisci:\n- Suggerimenti pratici per la fase indicata\n- Attività consigliate\n- Domande chiave da porsi\n- Esempi o analogie utili",
+      "variables": [
+        { "name": "TEMA", "label": "Tema o sfida da affrontare", "type": "text" },
+        { "name": "FASE", "label": "Fase di Design Thinking", "type": "select", "options": ["Empathize", "Define", "Ideate", "Prototype", "Test"] },
+        { "name": "OBIETTIVO", "label": "Obiettivo della fase", "type": "text" },
+        { "name": "UTENTI", "label": "Chi sono gli utenti coinvolti?", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

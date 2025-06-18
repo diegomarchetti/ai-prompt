@@ -1,0 +1,43 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Analisi Concorrenti -->
+  <div class="prompt-card">
+    <div class="prompt-title">🔎 Analisi Concorrenti</div>
+    <div class="prompt-description">
+      Confronta due o più concorrenti in base a criteri strategici e di mercato
+    </div>
+    <div class="prompt-preview">
+      Confronta [CONCORRENTI] rispetto a [CRITERI] con tabella riassuntiva e valutazione finale...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Analisi Concorrenti",
+      "template": "Confronta i seguenti concorrenti sulla base dei criteri indicati.\\n\\n🏢 CONCORRENTI: [CONCORRENTI]\\n📊 CRITERI DI CONFRONTO: [CRITERI]\\n🎯 OBIETTIVO ANALISI: [OBIETTIVO]\\n📍 FONTI CONSENTITE: [FONTI]\\n\\nFornisci:\\n- Una tabella comparativa\\n- Vantaggi e svantaggi di ciascun concorrente\\n- Considerazioni conclusive\\n\\nMantieni un tono neutrale e strategico.",
+      "variables": [
+        { "name": "CONCORRENTI", "label": "Concorrenti da confrontare", "type": "text" },
+        { "name": "CRITERI", "label": "Criteri di confronto (es. prezzi, UX, funzioni...)", "type": "textarea" },
+        { "name": "OBIETTIVO", "label": "Obiettivo dell&#39;analisi", "type": "text" },
+        { "name": "FONTI", "label": "Fonti o strumenti di ricerca", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Pro e Contro Strategici -->
+  <div class="prompt-card">
+    <div class="prompt-title">📊 Vantaggi e Svantaggi Competitivi</div>
+    <div class="prompt-description">
+      Sintetizza i punti di forza e debolezza dei concorrenti in ottica strategica
+    </div>
+    <div class="prompt-preview">
+      Elenca pro e contro per [CONCORRENTE] rispetto a [SETTORE_MERCATO]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Vantaggi e Svantaggi Competitivi",
+      "template": "Analizza i seguenti concorrenti mettendo in luce i loro punti di forza e debolezza.\\n\\n🏢 CONCORRENTI: [CONCORRENTI]\\n📈 SETTORE/MERCATO: [SETTORE_MERCATO]\\n📋 FATTORI DA VALUTARE: [FATTORI]\\n💼 USO DEI RISULTATI: [DESTINAZIONE_ANALISI]\\n\\nPresenta:\\n- Una sezione per ciascun concorrente\\n- Pro e contro ben separati\\n- Conclusioni strategiche\\n\\nTono analitico e focalizzato sul business.",
+      "variables": [
+        { "name": "CONCORRENTI", "label": "Nomi dei concorrenti", "type": "text" },
+        { "name": "SETTORE_MERCATO", "label": "Settore o nicchia di riferimento", "type": "text" },
+        { "name": "FATTORI", "label": "Aspetti da analizzare (prezzi, supporto, tecnologia...)", "type": "textarea" },
+        { "name": "DESTINAZIONE_ANALISI", "label": "A cosa servirà questa analisi", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

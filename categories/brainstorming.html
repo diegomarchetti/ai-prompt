@@ -1,0 +1,42 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Genera Idee su un Tema -->
+  <div class="prompt-card">
+    <div class="prompt-title">💭 Genera Idee Creative</div>
+    <div class="prompt-description">
+      Brainstorming di idee originali su un tema specifico per progetti, contenuti o prodotti
+    </div>
+    <div class="prompt-preview">
+      Genera idee per [CONTESTO] che coinvolgano [TARGET] e siano [STILE]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Genera Idee Creative",
+      "template": "Genera una lista di idee creative su questo argomento:\n\n📌 CONTESTO/TEMA: [CONTESTO]\n👥 TARGET COINVOLTO: [TARGET]\n🎨 STILE O TONO: [STILE]\n🎯 OBIETTIVO DELLE IDEE: [OBIETTIVO]\n\nFornisci:\n- 10 idee originali\n- Una frase di descrizione per ciascuna\n- Possibili vantaggi/criticità\n\nOrganizza il risultato in elenco numerato o tabella.",
+      "variables": [
+        { "name": "CONTESTO", "label": "Tema o ambito di brainstorming", "type": "text" },
+        { "name": "TARGET", "label": "Pubblico coinvolto o beneficiario", "type": "text" },
+        { "name": "STILE", "label": "Tono o stile desiderato", "type": "text" },
+        { "name": "OBIETTIVO", "label": "Scopo delle idee (es. engagement, innovazione...)", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Valuta e Seleziona le Idee -->
+  <div class="prompt-card">
+    <div class="prompt-title">🎯 Valuta le Migliori Idee</div>
+    <div class="prompt-description">
+      Seleziona le idee migliori secondo criteri specifici come originalità, impatto o costo
+    </div>
+    <div class="prompt-preview">
+      Valuta queste idee in base a [CRITERI] per scegliere le più efficaci...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Valuta le Migliori Idee",
+      "template": "Hai la seguente lista di idee:\n\n🧠 IDEE: [LISTA_IDEE]\n📊 CRITERI DI VALUTAZIONE: [CRITERI]\n🎯 CONTESTO DI UTILIZZO: [CONTESTO]\n\nFornisci:\n- Un punteggio per ciascuna idea\n- Una classifica finale\n- Brevi motivazioni per le migliori 3\n\nPresenta tutto in formato tabellare.",
+      "variables": [
+        { "name": "LISTA_IDEE", "label": "Elenco idee da valutare (una per riga)", "type": "textarea" },
+        { "name": "CRITERI", "label": "Criteri (es. originalità, costo, tempo...)", "type": "text" },
+        { "name": "CONTESTO", "label": "Ambito o obiettivo della selezione", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

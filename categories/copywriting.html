@@ -1,0 +1,44 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Headline Persuasiva -->
+  <div class="prompt-card">
+    <div class="prompt-title">🎯 Headline per Landing Page</div>
+    <div class="prompt-description">
+      Genera titoli accattivanti per pagine di vendita o promozione
+    </div>
+    <div class="prompt-preview">
+      Scrivi headline efficaci per [PRODOTTO_SERVIZIO] rivolto a [TARGET]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Headline per Landing Page",
+      "template": "Genera 5 varianti di headline persuasive per una landing page che promuove:\\n\\n📌 PRODOTTO/SERVIZIO: [PRODOTTO_SERVIZIO]\\n👥 TARGET CLIENTI: [TARGET_CLIENTI]\\n🎯 BENEFICIO PRINCIPALE: [BENEFICIO]\\n\\nLe headline devono essere brevi, chiare, persuasive e orientate al valore per il cliente. Includi anche una sottotitolo di supporto per ciascuna.",
+      "variables": [
+        { "name": "PRODOTTO_SERVIZIO", "label": "Prodotto o servizio", "type": "text" },
+        { "name": "TARGET_CLIENTI", "label": "Target clienti", "type": "text" },
+        { "name": "BENEFICIO", "label": "Beneficio principale", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Testo per Pubblicità -->
+  <div class="prompt-card">
+    <div class="prompt-title">✍️ Testo per Campagna ADV</div>
+    <div class="prompt-description">
+      Crea copy per annunci pubblicitari su web o social media
+    </div>
+    <div class="prompt-preview">
+      Scrivi un testo pubblicitario per [PRODOTTO_SERVIZIO] da usare su [PIATTAFORMA]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Testo per Campagna ADV",
+      "template": "Crea un copy pubblicitario per promuovere il seguente prodotto/servizio:\\n\\n📌 PRODOTTO/SERVIZIO: [PRODOTTO_SERVIZIO]\\n📍 PIATTAFORMA: [PIATTAFORMA]\\n👥 TARGET: [TARGET_CLIENTI]\\n💡 USP (Proposta Unica di Valore): [USP]\\n🎯 CTA: [CTA_DESIDERATA]\\n💬 TONO: [TONO_COMUNICAZIONE]\\n\\nIl testo deve essere sintetico, coinvolgente, e ottimizzato per il formato della piattaforma selezionata. Includi anche 2 versioni alternative con approccio creativo differente.",
+      "variables": [
+        { "name": "PRODOTTO_SERVIZIO", "label": "Prodotto o servizio", "type": "text" },
+        { "name": "PIATTAFORMA", "label": "Piattaforma", "type": "select", "options": ["Facebook", "Instagram", "LinkedIn", "Google Ads", "TikTok", "Generico"] },
+        { "name": "TARGET_CLIENTI", "label": "Target clienti", "type": "text" },
+        { "name": "USP", "label": "Proposta Unica di Valore", "type": "text" },
+        { "name": "CTA_DESIDERATA", "label": "Call to Action", "type": "text" },
+        { "name": "TONO_COMUNICAZIONE", "label": "Tono comunicazione", "type": "select", "options": ["Professionale", "Coinvolgente", "Creativo", "Ironico", "Autoritario"] }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

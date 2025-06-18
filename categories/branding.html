@@ -1,0 +1,45 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Naming Creativo per Brand o Prodotto -->
+  <div class="prompt-card">
+    <div class="prompt-title">🔤 Naming per Brand o Prodotto</div>
+    <div class="prompt-description">
+      Genera un nome originale, coerente con lo stile e i valori del progetto
+    </div>
+    <div class="prompt-preview">
+      Suggerisci un nome per [TIPOLOGIA] rivolto a [TARGET], ispirato a [VALORI]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Naming per Brand o Prodotto",
+      "template": "Genera delle proposte di naming per il seguente progetto:\n\n🏷️ TIPOLOGIA: [TIPOLOGIA]\n👥 TARGET DI RIFERIMENTO: [TARGET]\n💡 STILE DESIDERATO: [STILE]\n🌱 VALORI/CONCETTI DA COMUNICARE: [VALORI]\n🛑 NOMI DA EVITARE (facoltativo): [ESCLUSIONI]\n\nOgni proposta deve includere:\n- Nome\n- Significato e motivazione\n- Eventuale dominio o estensione consigliata",
+      "variables": [
+        { "name": "TIPOLOGIA", "label": "Tipo di progetto (brand, app, servizio...)", "type": "text" },
+        { "name": "TARGET", "label": "Pubblico a cui è rivolto", "type": "text" },
+        { "name": "STILE", "label": "Stile del nome (es. moderno, giocoso, tecnico)", "type": "text" },
+        { "name": "VALORI", "label": "Valori o concetti chiave", "type": "textarea" },
+        { "name": "ESCLUSIONI", "label": "Parole o nomi da evitare", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Slogan, Claim o Microcopy -->
+  <div class="prompt-card">
+    <div class="prompt-title">💬 Slogan o Claim Creativo</div>
+    <div class="prompt-description">
+      Crea frasi brevi, memorabili e in linea con l&#39;identità di brand o prodotto
+    </div>
+    <div class="prompt-preview">
+      Crea uno slogan efficace per [PRODOTTO] che trasmetta [EMOZIONE] al pubblico [TARGET]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Slogan o Claim Creativo",
+      "template": "Scrivi proposte di slogan, claim o microcopy per il seguente contesto:\n\n📦 PRODOTTO/SERVIZIO: [PRODOTTO]\n🎯 TARGET: [TARGET]\n💬 EMOZIONE/MESSAGGIO DA COMUNICARE: [EMOZIONE]\n🎨 STILE COMUNICATIVO: [STILE]\n📍 CONTESTO D&#39;USO: [CONTESTO]\n\nFornisci almeno 5 proposte distinte, con tono coerente e spiegazione del messaggio implicito.",
+      "variables": [
+        { "name": "PRODOTTO", "label": "Prodotto o servizio da comunicare", "type": "text" },
+        { "name": "TARGET", "label": "Pubblico di riferimento", "type": "text" },
+        { "name": "EMOZIONE", "label": "Emozione o messaggio chiave", "type": "text" },
+        { "name": "STILE", "label": "Tono dello slogan (es. diretto, ispirazionale, tecnico...)", "type": "text" },
+        { "name": "CONTESTO", "label": "Dove verrà usato (es. sito, pubblicità, app...)", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Analizza un Dataset -->
+  <div class="prompt-card">
+    <div class="prompt-title">📊 Analizza un Dataset</div>
+    <div class="prompt-description">
+      Analizza un file di dati (CSV, Excel, JSON...) ed evidenzia pattern, anomalie e insight
+    </div>
+    <div class="prompt-preview">
+      Analizza il file [TIPO_FILE] con focus su [OBIETTIVO], evidenziando correlazioni e outlier...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Analizza un Dataset",
+      "template": "Analizza il contenuto del seguente file di dati:\n\n📄 TIPO FILE: [TIPO_FILE]\n🎯 OBIETTIVO ANALISI: [OBIETTIVO]\n📊 VARIABILI IMPORTANTI: [VARIABILI]\n🧮 METRICHE DA USARE: [METRICHE]\n📍 NOTE AGGIUNTIVE: [NOTE_OPZIONALI]\n\nL&#39;analisi deve essere descrittiva e strutturata, con punti elenco, tabelle riassuntive (se utile), e suggerimenti per eventuali visualizzazioni o approfondimenti.",
+      "variables": [
+        { "name": "TIPO_FILE", "label": "Tipo di file (CSV, Excel, JSON...)", "type": "select", "options": ["CSV", "Excel", "JSON", "SQL", "Altro"] },
+        { "name": "OBIETTIVO", "label": "Obiettivo dell&#39;analisi", "type": "textarea" },
+        { "name": "VARIABILI", "label": "Variabili o colonne da analizzare", "type": "text" },
+        { "name": "METRICHE", "label": "Metriche o indicatori", "type": "text" },
+        { "name": "NOTE_OPZIONALI", "label": "Note o domande aggiuntive (opzionale)", "type": "textarea" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Interpreta Risultati o Visual -->
+  <div class="prompt-card">
+    <div class="prompt-title">📈 Interpreta Statistiche o Grafici</div>
+    <div class="prompt-description">
+      Spiega i risultati di un’analisi dati o grafico in modo chiaro e comprensibile
+    </div>
+    <div class="prompt-preview">
+      Interpreta questi risultati statistici o visualizzazioni relativi a [CONTESTO]...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Interpreta Statistiche o Grafici",
+      "template": "Spiega in modo chiaro e sintetico i risultati di un&#39;analisi dati.\n\n📊 CONTESTO: [CONTESTO]\n📈 RISULTATI STATISTICI: [STATISTICHE_O_GRAFICI]\n🧠 ASPETTI DA INTERPRETARE: [ASPETTI_CHIAVE]\n🎯 TARGET: [DESTINATARIO]\n\nFornisci una spiegazione dettagliata ma comprensibile, eventualmente semplificando concetti statistici complessi per il target indicato.",
+      "variables": [
+        { "name": "CONTESTO", "label": "Contesto dell&#39;analisi", "type": "text" },
+        { "name": "STATISTICHE_O_GRAFICI", "label": "Risultati o descrizione dei grafici", "type": "textarea" },
+        { "name": "ASPETTI_CHIAVE", "label": "Aspetti da mettere in evidenza", "type": "text" },
+        { "name": "DESTINATARIO", "label": "Tipo di pubblico", "type": "select", "options": ["Manager", "Data Analyst", "Utente comune", "Stakeholder tecnico"] }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>

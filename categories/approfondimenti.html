@@ -1,0 +1,38 @@
+<div class="prompt-grid">
+  <!-- Prompt 1: Spiegami una Patologia -->
+  <div class="prompt-card">
+    <div class="prompt-title">📚 Approfondimento su Patologia</div>
+    <div class="prompt-description">
+      Ottieni una panoramica medica dettagliata su una patologia, con linguaggio tecnico
+    </div>
+    <div class="prompt-preview">
+      Spiega in dettaglio [PATOLOGIA], comprese cause, sintomi e terapia...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Approfondimento su Patologia",
+      "template": "Agisci come un medico specialista. Fornisci una spiegazione completa e aggiornata su:\n\n🦠 PATOLOGIA: [PATOLOGIA]\n\nLa spiegazione deve includere:\n- Definizione clinica\n- Eziologia (cause e fattori di rischio)\n- Sintomatologia principale e varianti\n- Diagnosi (inclusi esami specifici)\n- Trattamento medico e/o chirurgico\n- Prognosi e follow-up\n\nUsa un linguaggio tecnico adatto a medici e specializzandi.",
+      "variables": [
+        { "name": "PATOLOGIA", "label": "Nome della patologia", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+
+  <!-- Prompt 2: Confronta due Malattie -->
+  <div class="prompt-card">
+    <div class="prompt-title">⚖️ Confronto tra Patologie</div>
+    <div class="prompt-description">
+      Richiedi un confronto clinico tra due condizioni simili per distinguerle efficacemente
+    </div>
+    <div class="prompt-preview">
+      Confronta [PATOLOGIA_1] e [PATOLOGIA_2] in base a sintomi, diagnosi e trattamento...
+    </div>
+    <button class="use-prompt-btn" data-prompt='{
+      "title": "Confronto tra Patologie",
+      "template": "Sei un medico clinico esperto. Confronta le seguenti due condizioni:\n\n🧬 PATOLOGIA 1: [PATOLOGIA_1]\n🧬 PATOLOGIA 2: [PATOLOGIA_2]\n\nIl confronto deve includere:\n- Presentazione clinica\n- Diagnostica differenziale\n- Trattamento e prognosi\n\nOrganizza in tabella o elenco strutturato per favorire il riconoscimento rapido.",
+      "variables": [
+        { "name": "PATOLOGIA_1", "label": "Prima patologia", "type": "text" },
+        { "name": "PATOLOGIA_2", "label": "Seconda patologia", "type": "text" }
+      ]
+    }'>Usa questo Prompt</button>
+  </div>
+</div>
