@@ -10,7 +10,7 @@
     </div>
     <button class="use-prompt-btn" data-prompt='{
       "title": "Crea una Pipeline CI/CD",
-      "template": "Crea una pipeline CI/CD per il seguente progetto:\\n\\n📦 PROGETTO: [TIPO_PROGETTO]\\n🔧 STRUMENTO: [STRUMENTO_CICD]\\n📂 OPERAZIONI DA INCLUDERE: [OPERAZIONI]\\n🚀 AMBIENTE DI DESTINAZIONE: [AMBIENTE_DEPLOY]\\n\\nLa pipeline deve prevedere:\\n- Step separati (es. build, test, deploy)\\n- Gestione degli errori\\n- Eventuali variabili o segreti (mockati)\\n\\nFornisci anche il file `.yaml` (o equivalente) completo, commentato e spiegato.",
+      "template": "Crea una pipeline CI/CD per il seguente progetto:\n\n📦 PROGETTO: [TIPO_PROGETTO]\n🔧 STRUMENTO: [STRUMENTO_CICD]\n📂 OPERAZIONI DA INCLUDERE: [OPERAZIONI]\n🚀 AMBIENTE DI DESTINAZIONE: [AMBIENTE_DEPLOY]\n\nLa pipeline deve prevedere:\n- Step separati (es. build, test, deploy)\n- Gestione degli errori\n- Eventuali variabili o segreti (mockati)\n\nFornisci anche il file `.yaml` (o equivalente) completo, commentato e spiegato.",
       "variables": [
         { "name": "TIPO_PROGETTO", "label": "Tipo di progetto (es. app web, API, microservizio)", "type": "text" },
         { "name": "STRUMENTO_CICD", "label": "Strumento CI/CD", "type": "select", "options": ["GitHub Actions", "GitLab CI", "Jenkins", "CircleCI", "Azure DevOps", "Altro"] },
@@ -31,7 +31,7 @@
     </div>
     <button class="use-prompt-btn" data-prompt='{
       "title": "Automazione Provisioning/Container",
-      "template": "Genera uno script per automatizzare un task DevOps:\\n\\n🛠️ OPERAZIONE: [OPERAZIONE]\\n🖥️ PIATTAFORMA TARGET: [PIATTAFORMA]\\n📄 TOOL O LINGUAGGIO: [LINGUAGGIO_TOOL]\\n🔐 RICHIESTA PRIVILEGI: [PRIVILEGI_ADMIN]\\n\\nLo script deve essere modulare, ben commentato, ed evitare dipendenze superflue. Può includere anche file complementari (es. Dockerfile, manifesti YAML, ecc.).",
+      "template": "Genera uno script per automatizzare un task DevOps:\n\n🛠️ OPERAZIONE: [OPERAZIONE]\n🖥️ PIATTAFORMA TARGET: [PIATTAFORMA]\n📄 TOOL O LINGUAGGIO: [LINGUAGGIO_TOOL]\n🔐 RICHIESTA PRIVILEGI: [PRIVILEGI_ADMIN]\n\nLo script deve essere modulare, ben commentato, ed evitare dipendenze superflue. Può includere anche file complementari (es. Dockerfile, manifesti YAML, ecc.).",
       "variables": [
         { "name": "OPERAZIONE", "label": "Operazione da automatizzare", "type": "textarea" },
         { "name": "PIATTAFORMA", "label": "Piattaforma o servizio", "type": "text" },

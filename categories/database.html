@@ -10,7 +10,7 @@
     </div>
     <button class="use-prompt-btn" data-prompt='{
       "title": "Crea Query SQL",
-      "template": "Scrivi una query SQL adatta a risolvere il seguente obiettivo:\\n\\n🎯 OBIETTIVO: [OBIETTIVO]\\n📋 TABELLA DI RIFERIMENTO: [NOME_TABELLA]\\n📊 COLONNE DISPONIBILI: [COLONNE_DISPONIBILI]\\n⚙️ CONDIZIONI / FILTRI: [FILTRI]\\n📄 TIPO DATABASE: [TIPO_DB]\\n\\nFornisci la query, spiegazione riga per riga e suggerimenti per eventuali ottimizzazioni.",
+      "template": "Scrivi una query SQL adatta a risolvere il seguente obiettivo:\n\n🎯 OBIETTIVO: [OBIETTIVO]\n📋 TABELLA DI RIFERIMENTO: [NOME_TABELLA]\n📊 COLONNE DISPONIBILI: [COLONNE_DISPONIBILI]\n⚙️ CONDIZIONI / FILTRI: [FILTRI]\n📄 TIPO DATABASE: [TIPO_DB]\n\nFornisci la query, spiegazione riga per riga e suggerimenti per eventuali ottimizzazioni.",
       "variables": [
         { "name": "OBIETTIVO", "label": "Obiettivo della query", "type": "textarea" },
         { "name": "NOME_TABELLA", "label": "Nome tabella", "type": "text" },
@@ -32,7 +32,7 @@
     </div>
     <button class="use-prompt-btn" data-prompt='{
       "title": "Schema Database da Requisiti",
-      "template": "Progetta uno schema relazionale per un database in base al seguente scenario:\\n\\n📘 SCENARIO: [SCENARIO]\\n🧩 ENTITÀ PRINCIPALI: [ENTITA]\\n🔁 RELAZIONI TRA ENTITÀ: [RELAZIONI]\\n⚙️ TIPO DB TARGET: [TIPO_DB]\\n\\nFornisci:\\n- Descrizione delle tabelle\\n- Nomi campi\\n- Tipi di dato\\n- Relazioni con chiavi primarie/esterne\\n\\nPuoi includere uno schema visuale testuale (tipo ERD semplificato) se utile.",
+      "template": "Progetta uno schema relazionale per un database in base al seguente scenario:\n\n📘 SCENARIO: [SCENARIO]\n🧩 ENTITÀ PRINCIPALI: [ENTITA]\n🔁 RELAZIONI TRA ENTITÀ: [RELAZIONI]\n⚙️ TIPO DB TARGET: [TIPO_DB]\n\nFornisci:\n- Descrizione delle tabelle\n- Nomi campi\n- Tipi di dato\n- Relazioni con chiavi primarie/esterne\n\nPuoi includere uno schema visuale testuale (tipo ERD semplificato) se utile.",
       "variables": [
         { "name": "SCENARIO", "label": "Scenario o caso d&#39;uso", "type": "textarea" },
         { "name": "ENTITA", "label": "Entità principali", "type": "text" },
