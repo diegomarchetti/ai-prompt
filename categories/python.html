@@ -10,7 +10,7 @@
     </div>
     <button class="use-prompt-btn" data-prompt='{
       "title": "Crea uno Script Python",
-      "template": "Scrivi uno script Python ben strutturato per realizzare il seguente obiettivo:\\n\\n🎯 OBIETTIVO: [OBIETTIVO_SCRIPT]\\n📦 LIBRERIE CONSENTITE: [LIBRERIE]\\n💬 COMMENTI: Includi commenti nel codice\\n📄 OUTPUT DESIDERATO: [TIPO_OUTPUT]\\n\\nFornisci un codice chiaro, pronto all\\u0027uso, con struttura ordinata e funzioni se necessario. Evita boilerplate inutili.",
+      "template": "Scrivi uno script Python ben strutturato per realizzare il seguente obiettivo:\n\n🎯 OBIETTIVO: [OBIETTIVO_SCRIPT]\n📦 LIBRERIE CONSENTITE: [LIBRERIE]\n💬 COMMENTI: Includi commenti nel codice\n📄 OUTPUT DESIDERATO: [TIPO_OUTPUT]\n\nFornisci un codice chiaro, pronto all\\u0027uso, con struttura ordinata e funzioni se necessario. Evita boilerplate inutili.",
       "variables": [
         { "name": "OBIETTIVO_SCRIPT", "label": "Obiettivo dello script", "type": "textarea" },
         { "name": "LIBRERIE", "label": "Librerie da usare (se note)", "type": "text" },
@@ -30,7 +30,7 @@
     </div>
     <button class="use-prompt-btn" data-prompt='{
       "title": "Parsing o Manipolazione File",
-      "template": "Scrivi uno script Python per leggere e manipolare un file del tipo indicato.\\n\\n📄 TIPO FILE: [TIPO_FILE]\\n🛠️ OPERAZIONE: [OPERAZIONE]\\n🔢 DATI SPECIFICI: [DATI_INTERESSATI]\\n📍 PERCORSO FILE: [PERCORSO_OPZIONALE]\\n\\nIl codice deve includere:\\n- Apertura file\\n- Operazioni richieste\\n- Chiusura/salvataggio\\n\\nFornisci anche suggerimenti per estendere lo script.",
+      "template": "Scrivi uno script Python per leggere e manipolare un file del tipo indicato.\n\n📄 TIPO FILE: [TIPO_FILE]\n🛠️ OPERAZIONE: [OPERAZIONE]\n🔢 DATI SPECIFICI: [DATI_INTERESSATI]\n📍 PERCORSO FILE: [PERCORSO_OPZIONALE]\n\nIl codice deve includere:\n- Apertura file\n- Operazioni richieste\n- Chiusura/salvataggio\n\nFornisci anche suggerimenti per estendere lo script.",
       "variables": [
         { "name": "TIPO_FILE", "label": "Tipo di file (CSV, JSON, TXT...)", "type": "select", "options": ["CSV", "JSON", "TXT", "Excel", "XML", "Altro"] },
         { "name": "OPERAZIONE", "label": "Tipo di operazione da fare", "type": "text" },
